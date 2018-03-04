@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Татьяна А](https://up.htmlacademy.ru/htmlcss/20/user/678767).
-* Наставник: `Неизвестно`.
+* Наставник: [Игорь Плиев](https://up.htmlacademy.ru/htmlcss/20/user/233017).
 
 ---
 
