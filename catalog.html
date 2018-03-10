@@ -6,7 +6,7 @@
   </head>
   <body>
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation" aria-label="Меню">
       <a class="main-header-logo href=index.html">
         <img src="img/index-logo.svg" alt="Логотип студии Нёрдс" width="160" height="65">
       </a>
@@ -23,8 +23,64 @@
   <main class="container">
     <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
     <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-          <!-- Здесь будет форма -->
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" class="filter">
+        <fieldset>
+          <legend>Стоимость:</legend>
+          <div class="filter-price-slider">
+            <!--здесь будет ползуное для выбора цены-->
+          </div>
+          <div class="filter-price-ranges">
+            <label for="filter-price-min">От:</label><br>
+            <input type="text" class="visually-hidden filter-input-price" name="price-min" id="filter-price-min" value="0" min="0" max="15000"><br>
+            <label for="filter-price-max">До:</label><br>
+            <input type="text" class="visually-hidden filter-input-price" name="price-max" id="filter-price-max" value="15000" min="0" max="15000">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Сетка: </legend>
+          <ul>
+            <li class="filter-option-radio">
+              <input class="visually-hidden filter-input-radio" type="radio" id="filter-radio-adaptive" name="filter-radio-grids" value="adaptive">
+              <label for="filter-radio-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option-radio">
+              <input class="visually-hidden filter-input-radio" type="radio" id="filter-radio-fixed" name="filter-radio-grids" value="fixed">
+              <label for="filter-radio-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option-radio">
+              <input class="visually-hidden filter-input-radio" type="radio" id="filter-radio-rubber" name="filter-radio-grids" value="rubber">
+              <label for="filter-radio-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности: </legend>
+          <ul>
+            <li class="filter-option-checkbox">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-checkbox-slider" name="slider" checked>
+              <label for="filter-checkbox-slider">Слайдер</label>
+            </li>
+            <li class="filter-option-checkbox">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="advantages" id="filter-checkbox-advantages">
+              <label for="filter-checkbox-advantages">Блок преимуществ</label>
+            </li>
+            <li class="filter-option-checkbox">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" checked name="news" id="filter-checkbox-news">
+              <label for="filter-checkbox-news">Новости</label>
+            </li>
+            <li class="filter-option-checkbox">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="filter-checkbox-gallery">
+              <label for="filter-checkbox-gallery" >Галерея</label>
+            </li>
+            <li class="filter-option-checkbox">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="cart" id="filter-checkbox-cart">
+              <label for="filter-checkbox-cart">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button button">Показать</button>
+    </form>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список шаблонов</h2>
@@ -126,17 +182,32 @@
       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
       <ul class="social-buttons">
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button" href="#" aria-label="Вконтакте"></a></li>
+        <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
+        <li><a class="social-button" href="#" aria-label="Инстаграм"></a></li>
       </ul>
       </section>
   </footer>
   </main>
   <section class="modal modal-contact-us">
-      <h2>Напишите нам</h2>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-    </section>
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post" class="modal-contact-us-form">
+      <div class="modal-contact-us-name">
+        <label for="contact-us-name">Ваше имя:</label><br>
+        <input type="text" name="name" id="contact-us-name" placeholder="Имя Фамилия">
+      </div>
+      <div class="modal-contact-us-email">
+        <label for="contact-us-email">Ваш e-mail:</label><br>
+        <input type="email" name="email" id="contact-us-email" placeholder="email@example.com">
+      </div>
+      <div class="modal-contact-us-comment">
+        <label for="contact-us-comment">Текст письма:</label><br>
+        <textarea id="contact-us-comment" name="comment" rows=10 cols="70" placeholder="В свободной форме"></textarea>
+      </div>
+      <br>
+      <input type="submit" value="Отправить" class="button">
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
   </body>
 </html>
