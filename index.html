@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <header class="main-header">
+  <header class="main-header grey-background">
     <nav class="main-navigation" aria-label="Меню">
       <a class="main-header-logo">
         <img src="img/index-logo.svg" alt="Логотип студии Нёрдс" width="160" height="65">
@@ -22,23 +25,23 @@
   </header>
   <main class="container">
     <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-    <section class="features">
+    <section class="features grey-background">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features-list">
         <li class="feature-item">
-          <b>Долго, дорого, скрупулезно.</b>
+          <b class="feauture-item-slogan">Долго, дорого, скрупулезно.</b>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="button" href="#">Узнать больше</a>
+          <a class="button to-know-more-button" href="#">Узнать больше</a>
         </li>
         <li class="feature-item">
-          <b>Любим математику как никто другой</b>
+          <b class="feauture-item-slogan">Любим математику как никто другой</b>
           <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a class="button" href="#">Узнать больше</a>
+          <a class="button to-know-more-button" href="#">Узнать больше</a>
         </li>
         <li class="feature-item">
-          <b>Только ночь, только хардкор</b>
+          <b class="feauture-item-slogan">Только ночь, только хардкор</b>
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="button" href="#">Узнать больше</a>
+          <a class="button to-know-more-button" href="#">Узнать больше</a>
         </li>
       </ul>
     </section>
@@ -46,28 +49,28 @@
       <h2 class="visually-hidden">Продукты</h2>
       <ul class="products-list">
         <li class="product-item">
-          <h3>Веб-сайты</h3>
+          <h3 class="product-item-heading">Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="button" href="#">заказать</a>
+          <a class="button order-button" href="#">заказать</a>
         </li>
         <li class="product-item">
-          <h3>Приложения</h3>
+          <h3 class="product-item-heading">Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button" href="#">заказать</a>
+          <a class="button order-button" href="#">заказать</a>
         </li>
         <li class="product-item">
-          <h3>Презентации</h3>
+          <h3 class="product-item-heading">Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="button" href="#">заказать</a>
+          <a class="button order-button" href="#">заказать</a>
         </li>
       </ul>
     </section>
     <section class="about-us">
       <h2 class="visually-hidden">О компании</h2>
-      <b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
+      <b class="about-us-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
         превыше креатива. Работаем не покладая рук, как роботы.</p>
-      <p>Выполняем заказы на разработку:</p>
+      <p><b class="about-us-products-list-intro">Выполняем заказы на разработку:</b></p>
       <ul class="products-list">
         <li class="product-item">Веб-сайтов любой сложности</li>
         <li class="product-item">Мобильных приложений для iOS и Android</li>
@@ -75,18 +78,18 @@
       </ul>
       <section class="digits">
         <h3 class="visually-hidden">О нас в цифрах</h3>
-        <p>С 2004 года любим точность во всем:</p>
+        <b class="digits-intro">С 2004 года любим точность во всем:</b>
         <ul class="digits-list">
           <li class="digits-item">
-            <b>146%</b>
+            <b class="digits-item-percent">146%</b>
             <p>Уровень самоотдачи</p>
           </li>
           <li class="digits-item">
-            <b>100%</b>
+            <b class="digits-item-percent">100%</b>
             <p>Соблюдение сроков</p>
           </li>
           <li class="digits-item">
-            <b>50%</b>
+            <b class="digits-item-percent">50%</b>
             <p>Минимальная предоплата</p>
           </li>
         </ul>
@@ -124,11 +127,11 @@
       <img src="img/map.jpg" alt="Карта как к нам добраться: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts">
-        <b>NЁRDS DESIGN STUDIO</b><br>
-        191186, Санкт-Петербург, <br>
-        ул. Б. Конюшенная, д. 19/8
-        <p>тел. +7 (812) 275-75-75</p>
-        <a href="contacts.html" class="button">Напишите нам</a>
+        <p class="contacts-studio-name">NЁRDS DESIGN STUDIO</p>
+        <p class="contacts-address">191186, Санкт-Петербург, <br>
+        ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
+        <a href="contacts.html" class="button write-us-button">Напишите нам</a>
       </div>
     </section>
     <section class="footer-social">
@@ -138,7 +141,7 @@
         <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
         <li><a class="social-button" href="#" aria-label="Инстаграм"></a></li>
       </ul>
-      <b>Давайте дружить, это выгодно!</b>
+      <b class="footer-social-slogan">Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
