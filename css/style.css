@@ -9,6 +9,9 @@ body{
   color: #000000;
 
   background-color: #ffffff;
+  width: 1440px;
+    background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 a{
@@ -51,17 +54,28 @@ a{
   font-size: 16px;
   line-height: 30px;
   color: #000000;
+  padding-bottom: 35px;
 }
 
 .site-navigation,
 .user-navigation{
   list-style: none;
+  padding:  0;
+}
+
+.user-navigation{
+  background: rgba(222, 25, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
 }
 
 .site-navigation a,
 .user-navigation a{
   color: #000000;
   text-transform: uppercase;
+  display: block;
+  padding: 74px 45px 0 0;
+
 }
 
 /*преимущества*/
@@ -507,23 +521,43 @@ a{
   opacity: 0.3;
 }
 
-.visually-hidden{
-  display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
 
 /*Сеточные стили*/
 
 /*навигация*/
 .site-navigation {
   margin: 0;
-  padding: 50px 0 0 0;
-  width: 600px;
+  width: 440px;
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+  display: flex;
+  flex-wrap: wrap;
+  /*margin-left: 70px;*/
 }
 
 .user-navigation {
+  display: flex;
   margin: 0;
   padding: 50px 0 0 0;
-  width: 180px;
+  max-width: 180px;
 }
 
 
@@ -599,7 +633,7 @@ a{
 
  .about-us-left-column{
   width: 660px;
-  padding: 80px 0 0 20px;
+  padding: 80px 20px 0 0;
  }
 
  .digits{
@@ -628,7 +662,7 @@ a{
 /*проекты*/
 
 .projects-list{
-  padding: 0 80px 0 45px;
+  padding: 0 45px 0 80px;
   margin: auto auto 130px auto;
   display: flex;
   justify-content: space-between;
@@ -716,4 +750,22 @@ a{
  .order-controls{
   margin-left: 40px;
  }
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.site-navigation li:nth-child(4n) a{
+  padding-right: 0;
+}
+
+.user-navigation a {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+  padding-left: 80px;
+  position: relative;
+}
+
+
 
