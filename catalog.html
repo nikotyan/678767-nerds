@@ -11,7 +11,7 @@
    <header class="main-header grey-background">
     <nav class="main-navigation" aria-label="Меню">
       <div class="main-navigation-wrapper">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/index-logo.svg" alt="Логотип студии Нёрдс" width="160" height="65">
         </a>
         <ul class="site-navigation">
@@ -39,9 +39,9 @@
             </div>
             <div class="filter-price-ranges">
               <label for="filter-price-min" class="filter-price-label">От:</label>
-              <input type="text" class="visually-hidden filter-input-price" name="price-min" id="filter-price-min" value="0" min="0" max="15000">
+              <input type="number" class="visually-hidden filter-input-price" name="price-min" id="filter-price-min" value="0" min="0" max="15000">
               <label for="filter-price-max" class="filter-price-label">До:</label>
-              <input type="text" class="visually-hidden filter-input-price" name="price-max" id="filter-price-max" value="15000" min="0" max="15000">
+              <input type="number" class="visually-hidden filter-input-price" name="price-max" id="filter-price-max" value="15000" min="0" max="15000">
             </div>
           </fieldset>
           <fieldset>
@@ -164,24 +164,25 @@
             </p>
           </li>
         </ul>
+        <section class="pagination">
+          <h3 class = "visually-hidden">Навигация по страницам каталога</h3>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a class="button">1</a></li>
+            <li class="pagination-item"><a class="button" href="#">2</a></li>
+            <li class="pagination-item"><a class="button" href="#">3</a></li>
+          </ul>
+          <a href="#" class="button pagination-next">следующая</a>
+        </section>
       </section>
     </div>
-    <section class="pagination">
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current"><a class="button">1</a></li>
-        <li class="pagination-item"><a class="button" href="#">2</a></li>
-        <li class="pagination-item"><a class="button" href="#">3</a></li>
-      </ul>
-      <a href="#" class="button pagination-next">следующая</a>
-    </section>
   </main>
   <footer class="main-footer">
     <section class="footer-social">
       <h2 class="visually-hidden">Ссылки на нас в социальных сетях</h2>
       <ul class="social-buttons">
-        <li><a class="social-button" href="#" aria-label="Вконтакте"><img src="img/vk-icon.svg" width="26px" height="15px" alt="Вконтакте"></a></li>
-        <li><a class="social-button" href="#" aria-label="Фейсбук"><img src="img/fb-icon.svg" width="12px" height="22px" alt="Фейсбук"></a></li>
-        <li><a class="social-button" href="#" aria-label="Инстаграм"><img src="img/insta-icon.svg" width="21px" height="21px" alt="Инстаграм"></a></li>
+        <li><a class="social-button" href="#" aria-label="Вконтакте"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
+        <li><a class="social-button" href="#" aria-label="Фейсбук"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+        <li><a class="social-button" href="#" aria-label="Инстаграм"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
       </ul>
       <div class="footer-social-text-wrapper">
         <b class="footer-social-slogan">Давайте дружить, это выгодно!</b>
@@ -190,7 +191,7 @@
     </section>
   </footer>
   <section class="modal modal-contact-us">
-    <h2 class=modal-contact-us-heading"">Напишите нам</h2>
+    <h2 class="modal-contact-us-heading">Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post" class="modal-contact-us-form">
       <div class="modal-contact-us-name">
         <label for="contact-us-name">Ваше имя:</label>
@@ -202,11 +203,11 @@
       </div>
       <div class="modal-contact-us-comment">
         <label for="contact-us-comment">Текст письма:</label>
-        <textarea id="contact-us-comment" name="comment" rows=10 cols="70" placeholder="В свободной форме"></textarea>
+        <textarea id="contact-us-comment" name="comment" rows="10" cols="70" placeholder="В свободной форме"></textarea>
       </div>
       <input type="submit" value="Отправить" class="button send-button">
     </form>
-    <button class="modal-close" type="close-button" aria-label="Закрыть"></button>
+    <button class="modal-close" aria-label="Закрыть"></button>
   </section>
   </body>
 </html>

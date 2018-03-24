@@ -516,16 +516,14 @@ a{
 /*навигация*/
 .site-navigation {
   margin: 0;
-  padding: 0;
+  padding: 50px 0 0 0;
   width: 600px;
-  padding-top: 50px;
 }
 
 .user-navigation {
   margin: 0;
-  padding: 0;
+  padding: 50px 0 0 0;
   width: 180px;
-  padding-top: 50px;
 }
 
 
@@ -548,10 +546,9 @@ a{
   margin-bottom: 80px;
  }
 .features-list{
-  margin: 0px;
   width: 1200px;
   margin: auto;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .feature-item{
@@ -564,7 +561,7 @@ a{
 }
 
 .feature-item-right-column{
-  line-height: 0px; /*чтобы прибить картинку к нижнему краю*/
+  line-height: 0; /*чтобы прибить картинку к нижнему краю*/
 }
 
 /*продукты*/
@@ -596,17 +593,13 @@ a{
 
   width: 1200px;
   display: flex;
-  margin: auto;
+  margin: auto auto 120px auto;
   justify-content: space-between;
-  margin-bottom: 120px;
-
-
  }
 
  .about-us-left-column{
   width: 660px;
-  padding-top: 80px;
-  padding-left: 20px;
+  padding: 80px 20px 0 0;
  }
 
  .digits{
@@ -635,15 +628,11 @@ a{
 /*проекты*/
 
 .projects-list{
-  margin: 0;
-  padding: 0;
-  margin: auto;
+  padding: 0 45px 0 80px;
+  margin: auto auto 130px auto;
   display: flex;
   justify-content: space-between;
   width: 1200px;
-  padding-left: 45px;
-  padding-right: 80px;
-  margin-bottom: 130px;
   box-sizing: border-box;
 
 }
@@ -677,17 +666,15 @@ a{
 }
 
 .catalog-heading{
-  margin-top: 0;
+  margin: 0 0 60px 0;
   height: 240px;
   text-align: center;
   line-height: 240px;
-  margin-bottom: 60px;
 }
 
 .order-controls{
   padding: 0;
-  margin: 0;
-  margin-bottom: 60px;
+  margin: 0 0 60px 0;
 }
 
 .filters{
