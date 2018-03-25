@@ -61,6 +61,7 @@ a{
 .user-navigation{
   list-style: none;
   padding:  0;
+  margin: 0;
 }
 
 .user-navigation{
@@ -74,7 +75,17 @@ a{
   color: #000000;
   text-transform: uppercase;
   display: block;
+
+}
+
+.site-navigation a{
   padding: 74px 45px 0 0;
+
+}
+
+
+.user-navigation a{
+  padding: 74px 0 0 85px;
 
 }
 
@@ -554,10 +565,9 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation {
-  display: flex;
   margin: 0;
-  padding: 50px 0 0 0;
-  max-width: 180px;
+  padding: 0 0 0 0;
+  width: 180px;
 }
 
 
@@ -760,12 +770,34 @@ img{
   padding-right: 0;
 }
 
-.user-navigation a {
+.user-navigation{
   background: rgba(234, 255, 45, 0.2);
   box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-  padding-left: 80px;
+ /* padding: 0 0 0 45px;*/
+}
+
+.cart-link {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
   position: relative;
+
+
+
 }
 
 
 
+.cart-link::before {
+  content: "";
+
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 82px;
+  left: 45px;
+
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
