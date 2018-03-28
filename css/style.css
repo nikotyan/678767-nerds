@@ -762,48 +762,37 @@ input[type="radio"].visually-hidden {
   border:none;
 }
 
-.filter-price-label{
-  text-transform: uppercase;
-  color: #000000;
-}
-
-
-.filter-price-ranges{
+.price-controls {
   font-size: 0;
   margin-top: 14px;
 }
 
-.filter-price-ranges label{
+.price-controls label {
   display: inline-block;
+  width: 50%;
+
   font-size: 16px;
   text-transform: uppercase;
-
-  width: 32px;
 }
 
-
-.filter-input-price{
-  width: 80px;
-
-  background-color: #eeeeee;
-  border: none;
-  text-align: center;
+.price-controls input {
+  width: 60px;
   padding: 8px 10px;
-  /*margin-left: 10px;*/
-  box-sizing: border-box;
+  margin-left: 10px;
+
   font-size: 16px;
+  text-align: center;
 
+  border: none;
+  border-radius: 5px;
+  background: #eeeeee;
+}
+
+.max-price {
+  text-align: right;
 }
 
 
-
-.price-min{
-  margin-right: 10px;
-}
-
-.price-max {
-  text-align: left;
-}
 
 
 /*сортировка*/
@@ -889,16 +878,29 @@ input[type="radio"].visually-hidden {
 
 
 .filters fieldset:first-child {
-  margin-bottom: 64px;
+  margin-bottom: 60px;
+}
+
+.filters fieldset:nth-child(2) legend{
+  margin-bottom: 15px;
+}
+
+.filters fieldset:nth-child(3) legend{
+  margin-bottom: 15px;
+}
+
+.filters fieldset:nth-child(2) {
+  margin-bottom: 23px;
 }
 
 .filter-option-radio,
 .filter-option-checkbox{
-
-  margin-bottom: 14px;
+  margin-bottom: 20px;
   padding-left: 32px;
   opacity: 0.8;
 }
+
+
 
 .filter-option-radio label,
 .filter-option-checkbox label {
@@ -948,8 +950,8 @@ input[type="radio"].visually-hidden {
   height: 25px;
 
 
-  left: -35px;
-  top: 0;
+  left: -38px;
+  top: -1px;
 
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
@@ -965,8 +967,8 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 25px;
 
-  top: 0;
-  left: -35px;
+  top: -1px;
+  left: -38px;
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1141,6 +1143,8 @@ input[type="radio"].visually-hidden {
 .modal-contact-us input:invalid{
   border:1px solid #e74246;
 }
+
+/*styleguide*/
 
 .filter-button:hover,
 .filter-button:focus,
