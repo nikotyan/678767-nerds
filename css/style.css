@@ -695,26 +695,11 @@ input[type="radio"].visually-hidden {
 }
 
 /*каталог фильтр цены*/
-.filters{
-  width: 260px;
-}
 
-.filters ul{
-  line-height: 20px;
-}
-
-
-.filters legend{
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000000;
-}
 
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 22px;
 }
 
 .filter-item {
@@ -874,9 +859,118 @@ input[type="radio"].visually-hidden {
 }
 
 
+/*фильтры*/
+
+.filters{
+  width: 260px;
+}
+
+.filters ul{
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
 
 
+.filters legend{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 26px;
+}
 
+.filters fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+
+.filters fieldset:first-child {
+  margin-bottom: 64px;
+}
+
+.filter-option-radio,
+.filter-option-checkbox{
+
+  margin-bottom: 14px;
+  padding-left: 32px;
+  opacity: 0.8;
+}
+
+.filter-option-radio label,
+.filter-option-checkbox label {
+  position: relative;
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+
+  width: 23px;
+  height: 23px;
+
+  left: -35px;
+  top: 0;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+
+  width: 27px;
+  height: 23px;
+
+  top: 0;
+  left: -35px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+
+  width: 25px;
+  height: 25px;
+
+
+  left: -35px;
+  top: 0;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.filter-input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+
+  width: 25px;
+  height: 25px;
+
+  top: 0;
+  left: -35px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 /*карточки товаров*/
 
@@ -888,9 +982,35 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
   width: 360px;
-  margin-bottom: 30px;
+  margin-bottom: 63px;
   margin-left: 40px;
+  position: relative;
+
  }
+
+.catalog-item::before{
+   content: "";
+
+  position: absolute;
+
+  width: 360px;
+  height: 40px;
+
+  left: 0;
+  top: -40px;
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
+.catalog-item-info {
+  position: absolute;
+  right:0;
+  bottom: 0;
+  width: inherit;
+  text-align: center;
+}
 
  .catalog-list {
  display: flex;
@@ -898,16 +1018,7 @@ input[type="radio"].visually-hidden {
  margin: 0;
  flex-wrap: wrap;
  margin-bottom: 60px;
-
  }
-
-
-
-
-
-
-
-
 
 .filter-button{
   width: 260px;
@@ -933,6 +1044,29 @@ input[type="radio"].visually-hidden {
 
 
 /*пагинация*/
+
+
+.pagination {
+  margin-bottom: 63px;
+}
+
+.pagination-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 444px;
+
+
+  padding: 0;
+  margin: 0 12px 0 0;
+
+  justify-content: space-between;
+}
+
+.pagination-item{
+  margin-right: 12px;
+  width: 49px;
+  height: 50px;
+}
  .pagination-item a{
 
   color: #000000;
@@ -941,15 +1075,19 @@ input[type="radio"].visually-hidden {
   height: 30px;
   text-align: center;
   line-height: 25px;
+
+   display: block;
+  padding: 10px 19px;
 }
 
 
-.pagination-next{
+.pagination-item .pagination-next{
   color: #000000;
 
   background-color: #eeeeee;
   width: 260px;
-  height: 50px;
+
+  display: inline-block;
 
 }
 
@@ -974,15 +1112,6 @@ input[type="radio"].visually-hidden {
   height: 50px;
 }
 
-.input_copy {
-  background-image: url("input copy.png");
-  position: absolute;
-  left: 644px;
-  top: 1521px;
-  width: 368px;
-  height: 58px;
-  z-index: 60;
-}
 
 .modal-contact-us input{
   border:1px solid #d7dcde;
@@ -1101,6 +1230,5 @@ input[type="radio"].visually-hidden {
 .filter-option-checkbox:disabled+label{
   opacity: 0.3;
 }
-
 
 
