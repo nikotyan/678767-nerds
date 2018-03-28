@@ -13,13 +13,22 @@ body{
  width: 1440px;
 }
 
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+
 a{
   text-decoration: none;
 }
 
 .features-list,
 .products-list,
-.digits-list,
+.about-us-digits-list,
 .projects-list,
 .social-buttons,
 .order-directions-list,
@@ -48,6 +57,17 @@ a{
   border-radius: 4px;
 }
 
+.button:hover,
+.button:focus{
+  background-color: #e74246;
+}
+
+.button:active{
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  color: rgba(255,255,255,0.3);
+}
+
 /*навигация*/
 .main-navigation{
   font-size: 16px;
@@ -65,7 +85,6 @@ a{
   margin: 0;
 }
 
-/*навигация*/
 .site-navigation {
   width: 440px;
   display: flex;
@@ -76,24 +95,37 @@ a{
   width: 160px;
 }
 
-
 .site-navigation a,
 .user-navigation a{
   color: #000000;
   text-transform: uppercase;
   display: block;
-
 }
 
 .site-navigation a{
   padding: 74px 45px 0 0;
-
 }
-
 
 .user-navigation a{
   padding: 74px 0 0 85px;
+}
 
+.site-navigation a:focus,
+.site-navigation a:hover,
+.user-navigation a:hover,
+.user-navigation a:focus{
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active{
+  color: #000000;
+  opacity: 0.3;
+}
+
+.user-navigation-current,
+.site-navigation-current a{
+  border-bottom: 1px solid #fb565a;
 }
 
 .main-header-logo{
@@ -102,47 +134,49 @@ a{
   line-height: 0;
 }
 
+.main-header-logo:focus,
+.main-header-logo:hover{
+  opacity: 0.8;
+}
+
+.main-header-logo:active{
+  opacity: 0.3;
+}
+
 
 .site-navigation li:nth-child(4n) a{
   padding-right: 0;
 }
 
-
 .cart-link {
   position: relative;
 }
 
-
-
-.user-navigation svg {
+.cart-link::before {
   content: "";
 
-  color: #a6a6a6;
   width: 15px;
   height: 15px;
   position: absolute;
   top: 82px;
   left: 45px;
 
-
- /* background-image: url("../img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.8;*/
-
 }
 
-
-
-.user-navigation svg path {
-  fill: #a6a6a6;
+.cart-link:hover::before,
+.cart-link:focus::before,
+.cart-link:active::before {
+  opacity: 1;
 }
-
 
 /*преимущества*/
 
  .features{
   margin-bottom: 80px;
+  position: relative;
  }
 
 .features-list{
@@ -151,7 +185,6 @@ a{
 
 .feature-item{
   display: flex;
-
 }
 
 .feature-item p{
@@ -164,11 +197,8 @@ a{
   font-size: 55px;
   line-height: 55px;
   font-weight: normal;
-}
 
-
-.feature-item-slogan{
-   max-width: 600px;
+  max-width: 600px;
   margin: 0;
   margin-bottom: 27px;
   display: inline-block;
@@ -177,7 +207,6 @@ a{
   line-height: 55px;
   font-weight: 500;
 }
-
 
 .feature-item{
   display: none;
@@ -206,24 +235,10 @@ a{
   background-position: 100% 20px;
 }
 
-.features{
-  position: relative;
-  /*  background-color: #eeeeee;*/
-}
-
-.features-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-
 .to-know-more-button{
   width: 240px;
   height: 50px;
  }
-
 
 .slider-controls i {
   display: inline-block;
@@ -249,7 +264,6 @@ a{
   z-index: 1;
   border-radius: 50%;
 }
-
 
 .slider-controls {
   position: absolute;
@@ -280,12 +294,35 @@ a{
   background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
-
 }
 
+/*продукты*/
 
+.products-list{
+  margin: auto;
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 85px;
+  padding: 0;
+}
 
- /*продукты*/
+.product-item{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+ }
+
+.product-item:nth-child(3n){
+   margin-right: 60px;
+}
+
+.product-item p{
+  max-width: 245px ;
+}
+
+.product-item-image{
+  order: -1;
+}
 
 .product-item-heading{
   text-transform: uppercase;
@@ -294,82 +331,241 @@ a{
   margin-bottom: 0;
 }
 
-
-
 .product-item:nth-child(2) .button{
   background-color: #00ca74;
- }
+}
 
 .product-item:nth-child(3) .button{
   background-color: #efc84a;
+}
+
+.product-item:nth-child(2) .button:hover,
+.product-item:nth-child(2) .button:focus
+{
+  background-color: #00bc6c
  }
 
- .order-button{
+.product-item:nth-child(2) .button:active{
+  background-color:#00aa62;
+}
+
+.product-item:nth-child(3) .button:hover,
+.product-item:nth-child(3) .button:focus
+{
+  background-color: #eab534;
+ }
+
+.product-item:nth-child(3) .button:active{
+  background-color: #e5a722;
+}
+
+.order-button{
   width: 160px;
   height: 50px;
-   margin-top: 18px;
- }
-
+  margin-top: 18px;
+}
 
 /*о нас*/
+.about-us{
+  display: flex;
+  margin: auto auto auto auto;
+  justify-content: space-between;
+  position: relative;
+ }
+
+.about-us::before{
+   border: 2px solid #eeeeee;
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 1160px;
+}
+
+.about-us-description{
+  width: 660px;
+  padding: 70px 0 0 0;
+ }
+
+.about-us-description p{
+    padding-top: 18px;
+}
+
 .about-us-slogan{
   font-size: 45px;
   line-height: 45px;
-
+  padding: 0;
 }
 
-.about-us-products-list-intro{
+.about-us-orders-list-intro{
   text-transform: uppercase;
   font-weight: normal;
+  padding-top: 5px;
+  margin: 0 0 10px 0;
+  display: inline-block;
 }
 
-.digits-intro{
+.about-us-orders-list{
+  padding: 0;
+  margin: 0;
+}
+
+.about-us-order-item::before {
+    border: 2px solid #fb565a;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 25px;
+}
+
+.about-us-order-item{
+  position: relative;
+  display: block;
+  padding: 0 0 23px 35px;
+}
+
+/* о нас в цифрах*/
+
+.about-us-digits{
+  width: 360px;
+  margin-top: 35px;
+  margin-bottom: 100px;
+ }
+
+ .about-us-digits-logo{
+  margin-bottom: 35px;
+  display: block;
+ }
+
+ .about-us-digits-intro{
   text-transform: uppercase;
+
+  margin-bottom: 60px;
+  display: block;
+  padding-left: 15px;
+ }
+
+ .about-us-digits-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 
-.digits-item-percent{
+.about-us-digits-item {
+  width: 105px;
+}
+
+.about-us-digits-item-percent{
   font-size: 45px;
   line-height: 10.06px;
 }
 
-.digits-item-percent p{
+.about-us-digits-item-percent p{
   line-height: 18px;
 }
 
-.digits-item-percent sup{
+.about-us-digits-item-percent sup{
   top: -15px;
   font-size: 25px;
 }
 
-
-
 /*проекты*/
 
-/*контакты*/
+.projects{
+  position: relative;
+  padding: 0;
+}
+
+.projects::before{
+   border: 2px solid #eeeeee;
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: -50px;
+    width: 1160px;
+}
+
+.projects:after{
+   border: 2px solid #eeeeee;
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: -5px;
+    width: 1160px;
+}
+
+
+.projects-list{
+  margin: auto auto 84px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+
+}
+
+.project-item{
+  opacity:0.2;
+  margin-bottom: 35px;
+  width: 300px;
+  text-align: center;
+  padding: 0;
+  position: relative;
+}
+
+.project-item:hover,
+.project-item:focus{
+  opacity:1;
+}
+
+.project-item:active{
+  opacity:0.1;
+}
+
+.project-item::after{
+  content: "";
+  position: absolute;
+
+  width: 2px;
+  height: 52px;
+  right:0;
+  top:0;
+  background-color: red;
+}
+
+
+/*footer контакты*/
+
+.footer-contacts {
+  position:relative;
+}
+
+.footer-contacts-map-image{
+  width: 100%;
+}
 
 .contacts{
   content: "";
- width: 319px;
- height: 308px;
- padding: 47px 50px 0 50px;
- margin: 0;
+  width: 319px;
+  height: 308px;
+  padding: 47px 50px 0 50px;
+  margin: 0;
   position: absolute;
-    top: 53px;
+  top: 57px;
   left: 140px;
   background-color: #ffffff;
   box-sizing: border-box;
-
-
 }
 
 .contacts-studio-name{
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  /*padding-top: 54px;
-  padding-left: 50px;
-  padding-right: 77px;*/
-  margin: 0 0 21px 0;
+  margin: 0 0 24px 0;
 }
 
 .contacts-address{
@@ -383,7 +579,6 @@ a{
   margin-top: 3px;
 }
 
-
 .write-us-button{
   width: 219px;
   height: 50px;
@@ -391,10 +586,55 @@ a{
   margin-top: 23px;
  }
 
-/*footer*/
+/*footer социальные сети*/
+
+.footer-social{
+ display: flex;
+ margin-top: 65px;
+}
+
+.social-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social-text-wrapper{
+  margin-left: 140px;
+  vertical-align: center;
+  padding: 0;
+}
+
 .footer-social-slogan{
   font-size: 36px;
   line-height: 36px;
+}
+
+.social-button {
+  width: 80px;
+  height: 80px;
+  background-color: #e1e1e1;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 80px;
+  display: block;
+}
+
+.social-button:hover,
+.social-button:focus{
+  background-color: #e74246;
+}
+
+.social-button:active{
+  background-color: #e74246;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.social-button:active path{
+  fill-opacity: 0.3;
 }
 
 /*catalog*/
@@ -500,11 +740,7 @@ a{
 
 }
 
-.main-footer,
-.modal-contact-us{
-  color: #000000;
-  margin-top: 82px;
-}
+
 
 .modal-contact-us-heading{
   font-size: 45px;
@@ -528,86 +764,10 @@ a{
 
 /*состояния по styleguide*/
 
-.site-navigation a:focus,
-.site-navigation a:hover,
-.user-navigation a:hover,
-.user-navigation a:focus{
-  color: #fb565a;
-}
-
-.site-navigation a:active,
-.user-navigation a:active{
-  color: #000000;
-  opacity: 0.3;
-}
-
-
-.user-navigation-current,
-.site-navigation-current a{
-  border-bottom: 1px solid #fb565a;
-}
 
 
 
-.main-header-logo:focus,
-.main-header-logo:hover{
-  opacity: 0.8;
-}
 
-.main-header-logo:active{
-  opacity: 0.3;
-}
-
-.button:hover,
-.button:focus{
-  background-color: #e74246;
-}
-
-.button:active{
-  background-color: #d7373b;
-  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
-  color: rgba(255,255,255,0.3);
-  /*box-shadow:
-[inset] <- внутренняя
-5px     - смещение по x
-10px    - смещение по y
-[2px]   - размытие
-[3px]   - растяжение
-[red];  - цвет*/
-}
-
-.product-item:nth-child(2) .button:hover,
-.product-item:nth-child(2) .button:focus
-{
-  background-color: #00bc6c
- }
-
-.product-item:nth-child(2) .button:active{
-  background-color:#00aa62;
- }
-
-.product-item:nth-child(3) .button:hover,
-.product-item:nth-child(3) .button:focus
-{
-  background-color: #eab534;
- }
-
- .product-item:nth-child(3) .button:active{
-  background-color: #e5a722;
- }
-
-.project-item{
-  opacity:0.2;
-}
-
-.project-item:hover,
-.project-item:focus{
-  opacity:1;
-}
-
-.project-item:active{
-  opacity:0.1;
-}
 
 .input_copy {
   background-image: url("input copy.png");
@@ -757,120 +917,8 @@ input[type="radio"].visually-hidden {
 
 
 
-/*продукты*/
-.products .products-list{
-  margin: auto;
-  /*width: 1200px;*/
-  display:flex;
-  justify-content: space-between;
-  margin-bottom: 85px;
- }
-
- .products .product-item{
-  width: 300px;
-  display: flex;
-  flex-direction: column;
- }
-
-.products .product-item:nth-child(3n){
-   margin-right: 60px;
-}
-
-.products .product-item p{
-  max-width: 245px ;
-}
-
- .product-item-image{
-  order: -1;
- }
 
 
-/* о нас*/
-
-
- .about-us{
-  padding: 0;
-
-  /*width: 1200px;*/
-  display: flex;
-  margin: auto auto 120px auto;
-  justify-content: space-between;
-  position: relative;
- }
-
- .about-us-left-column{
-  width: 660px;
-  padding: 70px 0 0 0;
- }
-
- .digits{
-  width: 360px;
-  /*margin-right: 20px;*/
-  margin-top: 40px;
-   margin-bottom: 100px;
- }
-
- .about-us-slogan{
-  padding: 0;
- }
-
- .digits-list{
-  display: flex;
-  justify-content: space-between;
- }
-
- .digits-logo{
-  margin-bottom: 30px;
-  display: block;
- }
-
- .digits-intro{
-  margin-bottom: 60px;
-  display: block;
-  padding-left: 15px;
- }
-
-/*проекты*/
-
-.projects-list{
-
-  margin: auto auto 48px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-
-}
-
-
-
-/*футер*/
-
-.footer-contacts-map-image{
-  width: 100%;
-
-}
-
-section.footer-social{
-  display: flex;
- margin-top: 58px;
-}
-
-.social-buttons{
-  display: flex;
-  justify-content: space-between;
-  width: 260px;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-social-text-wrapper{
-  margin-left: 140px;
-  vertical-align: center;
-  padding: 0;
-
-}
 
 .catalog-heading{
   margin: 0 0 60px 0;
@@ -929,169 +977,4 @@ img{
   height: auto;
 }
 
-
-
-
-
-/*****/
-
-.products .products-list{
- /*padding: 0 0 0 20px;*/
-}
-
-.container{
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-
-
-.products{
-  margin: auto;
-}
-
-.about-us-left-column p{
-    padding-top: 18px;
-}
-
-.about-us-products-list-intro{
-  padding-top: 5px;
-  margin: 0;
-  margin-bottom: 10px;
-  display: inline-block;
-
-}
-
-.products-list{
-  padding: 0;
-  margin: 0;
-}
-
-.project-item{
-  margin-bottom: 35px;
-  width: 300px;
-  text-align: center;
-  padding: 0;
-}
-
-
-
-
-
-.about-us .product-item:before {
-    border: 2px solid #fb565a;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 12px;
-    width: 25px;
-}
-
-.about-us .product-item{
-  position: relative;
-  display: block;
-  padding: 0 0 23px 35px;
-}
-
-.about-us{
-  position: relative;
-}
-
-.about-us:before{
-   border: 2px solid #eeeeee;
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 0px;
-    width: 1160px;
-}
-
-.projects{
-  position: relative;
-}
-
-.projects:before{
-   border: 2px solid #eeeeee;
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: -52px;
-    width: 1160px;
-}
-
-.projects:after{
-   border: 2px solid #eeeeee;
-    content: '';
-    position: absolute;
-    left: 20px;
-    bottom: 0px;
-    width: 1160px;
-}
-
-.projects-list .project-item{
-  position: relative;
-}
-
-
-.projects-list .project-item::after{
-    content: '';
-    content: "";
-
-  position: absolute;
-
-  width: 2px;
-  height: 52px;
-  right:0px;
-  top:0px;
-
-  background-color: red;
-
-}
-
-.digits-list{
-  margin: 0;
-  padding: 0;
-  padding-right: 15px;
-  box-sizing: border-box;
-}
-
-
-
-.footer-contacts {
-  position:relative;
-}
-
-.social-button {
-  width: 80px;
-  height: 80px;
-  background-color: #e1e1e1;
-  border-radius: 40px;
-  text-align: center;
-  line-height: 80px;
-  display: block;
-}
-
-.social-button:hover,
-.social-button:focus{
-  background-color: #e74246;
-}
-
-.social-button:active{
-  background-color: #e74246;
-  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
-}
-
-.social-button:active path{
-  fill-opacity: 0.3;
-}
-
-.projects {
-  padding: 0;
-}
-
-.digits-item {
-  width: 105px;
-}
 
