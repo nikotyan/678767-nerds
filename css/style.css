@@ -9,6 +9,8 @@ body {
   color: #000000;
 
   background-color: #ffffff;
+
+  width: 1440px;
 }
 
 .container {
@@ -1094,6 +1096,8 @@ input[type="radio"].visually-hidden {
 .modal-contact-us-heading {
   font-size: 45px;
   line-height: 45px;
+  margin: 0 0 50px 0;
+  color: #000000;
 }
 
 .modal-contact-us input {
@@ -1103,6 +1107,7 @@ input[type="radio"].visually-hidden {
 .send-button {
   width: 260px;
   height: 50px;
+  margin-top: 48px;
 }
 
 .contact-us-name input {
@@ -1115,6 +1120,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid #d7dcde;
 }
 
+/*
 .modal-contact-us input:focus,
 .modal-contact-us input:hover {
   border: 1px solid #b4b9bb;
@@ -1138,7 +1144,7 @@ input[type="radio"].visually-hidden {
 
 .modal-contact-us input:invalid {
   border: 1px solid #e74246;
-}
+}*/
 
 /*styleguide*/
 
@@ -1235,4 +1241,105 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-description {
   margin-bottom: 30px;
+}
+
+.modal-contact-us {
+  position: fixed;
+  width: 760px;
+  padding: 73px 100px 85px 100px;
+
+  left: 240px;
+  bottom: 178px;
+  background-color: #ffffff;
+
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 1, 0.75);
+}
+
+.modal-contact-us-form label {
+  color: #000000;
+}
+
+.modal-close {
+  width: 21px;
+  height: 21px;
+
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  ;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  width: 21px;
+  height: 3px;
+
+  top: 10px;
+  left: 0;
+
+  background-color: #fecccd;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-contact-us-name {
+  padding: 0;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.modal-contact-us-email {
+  display: inline-block;
+  margin-bottom: 13px;
+  box-sizing: border-box;
+}
+
+.modal-contact-us-form ::-webkit-input-placeholder {
+  color: #dddddd;
+}
+
+.modal-contact-us-form ::-moz-placeholder {
+  color: #dddddd;
+}
+
+.modal-contact-us-form :-moz-placeholder {
+  color: #dddddd;
+}
+
+.modal-contact-us-form :-ms-input-placeholder {
+  color: #dddddd;
+}
+
+.modal-contact-us-form textarea {
+  width: 760px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.modal-contact-us-form input[type="text"],
+.modal-contact-us-form input[type="email"] {
+  width: 358px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+}
+
+.modal-contact-us-comment {
+  margin-top: 18px;
 }
