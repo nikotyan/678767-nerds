@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
 
@@ -11,7 +11,7 @@ body{
   background-color: #ffffff;
 }
 
-.container{
+.container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -20,11 +20,11 @@ body{
 
 
 
-a{
+a {
   text-decoration: none;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
@@ -40,25 +40,25 @@ img{
 .order-options-list,
 .order-directions-list,
 .filter-option-radio-list,
-.filter-option-checkbox-list{
+.filter-option-checkbox-list {
   list-style: none;
 }
 
-.order-directions-list{
-    position: absolute;
-    display: flex;
-    right: 0;
+.order-directions-list {
+  position: absolute;
+  display: flex;
+  right: 0;
   top: -15px;
   width: 40px;
   justify-content: space-between;
   margin-left: 48px;
 }
 
-.grey-background{
-  background-color:#eeeeee;
+.grey-background {
+  background-color: #eeeeee;
 }
 
-.button{
+.button {
   font: inherit;
   display: inline-block;
   color: #ffffff;
@@ -71,14 +71,14 @@ img{
 }
 
 .button:hover,
-.button:focus{
+.button:focus {
   background-color: #e74246;
 }
 
-.button:active{
+.button:active {
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -101,7 +101,8 @@ input[type="radio"].visually-hidden {
 
 
 /*навигация*/
-.main-navigation{
+
+.main-navigation {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
@@ -111,9 +112,9 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation,
-.user-navigation{
+.user-navigation {
   list-style: none;
-  padding:  0;
+  padding: 0;
   margin: 0;
 }
 
@@ -128,55 +129,55 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a,
-.user-navigation a{
+.user-navigation a {
   color: #000000;
   text-transform: uppercase;
   display: block;
 }
 
-.site-navigation a{
+.site-navigation a {
   padding: 74px 45px 0 0;
 }
 
-.user-navigation a{
+.user-navigation a {
   padding: 74px 0 0 85px;
 }
 
 .site-navigation a:focus,
 .site-navigation a:hover,
 .user-navigation a:hover,
-.user-navigation a:focus{
+.user-navigation a:focus {
   color: #fb565a;
 }
 
 .site-navigation a:active,
-.user-navigation a:active{
+.user-navigation a:active {
   color: #000000;
   opacity: 0.3;
 }
 
 .user-navigation-current,
-.site-navigation-current a{
+.site-navigation-current a {
   border-bottom: 1px solid #fb565a;
 }
 
-.main-header-logo{
+.main-header-logo {
   width: 160px;
   padding-top: 50px;
   line-height: 0;
 }
 
 .main-header-logo:focus,
-.main-header-logo:hover{
+.main-header-logo:hover {
   opacity: 0.8;
 }
 
-.main-header-logo:active{
+.main-header-logo:active {
   opacity: 0.3;
 }
 
 
-.site-navigation li:nth-child(4n) a{
+.site-navigation li:nth-child(4n) a {
   padding-right: 0;
 }
 
@@ -206,26 +207,26 @@ input[type="radio"].visually-hidden {
 
 /*преимущества*/
 
- .features{
+.features {
   margin-bottom: 80px;
   position: relative;
- }
+}
 
-.features-list{
+.features-list {
   margin: auto;
 }
 
-.feature-item{
+.feature-item {
   display: flex;
 }
 
-.feature-item p{
+.feature-item p {
   max-width: 430px;
   margin: 0;
   margin-bottom: 38px;
 }
 
-.feature-item-slogan{
+.feature-item-slogan {
   font-size: 55px;
   line-height: 55px;
   font-weight: normal;
@@ -236,12 +237,12 @@ input[type="radio"].visually-hidden {
   display: inline-block;
 }
 
-.feature-item{
+.feature-item {
   display: none;
   padding: 78px 0 80px 0;
 }
 
-.feature-item:nth-child(1){
+.feature-item:nth-child(1) {
   display: block;
 }
 
@@ -263,10 +264,10 @@ input[type="radio"].visually-hidden {
   background-position: 100% 20px;
 }
 
-.to-know-more-button{
+.to-know-more-button {
   width: 240px;
   height: 50px;
- }
+}
 
 .slider-controls i {
   display: inline-block;
@@ -326,106 +327,105 @@ input[type="radio"].visually-hidden {
 
 /*продукты*/
 
-.products-list{
+.products-list {
   margin: auto;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   margin-bottom: 85px;
   padding: 0;
 }
 
-.product-item{
+.product-item {
   width: 300px;
   display: flex;
   flex-direction: column;
- }
-
-.product-item:nth-child(3n){
-   margin-right: 60px;
 }
 
-.product-item p{
-  max-width: 245px ;
+.product-item:nth-child(3n) {
+  margin-right: 60px;
 }
 
-.product-item-image{
+.product-item p {
+  max-width: 245px;
+}
+
+.product-item-image {
   order: -1;
 }
 
-.product-item-heading{
+.product-item-heading {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
   margin-bottom: 0;
 }
 
-.product-item:nth-child(2) .button{
+.product-item:nth-child(2) .button {
   background-color: #00ca74;
 }
 
-.product-item:nth-child(3) .button{
+.product-item:nth-child(3) .button {
   background-color: #efc84a;
 }
 
 .product-item:nth-child(2) .button:hover,
-.product-item:nth-child(2) .button:focus
-{
+.product-item:nth-child(2) .button:focus {
   background-color: #00bc6c
- }
+}
 
-.product-item:nth-child(2) .button:active{
-  background-color:#00aa62;
+.product-item:nth-child(2) .button:active {
+  background-color: #00aa62;
 }
 
 .product-item:nth-child(3) .button:hover,
-.product-item:nth-child(3) .button:focus
-{
+.product-item:nth-child(3) .button:focus {
   background-color: #eab534;
- }
+}
 
-.product-item:nth-child(3) .button:active{
+.product-item:nth-child(3) .button:active {
   background-color: #e5a722;
 }
 
-.order-button{
+.order-button {
   width: 160px;
   height: 50px;
   margin-top: 18px;
 }
 
 /*о нас*/
-.about-us{
+
+.about-us {
   display: flex;
   margin: auto auto auto auto;
   justify-content: space-between;
   position: relative;
- }
-
-.about-us::before{
-   border: 2px solid #eeeeee;
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 0;
-    width: 1160px;
 }
 
-.about-us-description{
+.about-us::before {
+  border: 2px solid #eeeeee;
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 1160px;
+}
+
+.about-us-description {
   width: 660px;
   padding: 70px 0 0 0;
- }
-
-.about-us-description p{
-    padding-top: 18px;
 }
 
-.about-us-slogan{
+.about-us-description p {
+  padding-top: 18px;
+}
+
+.about-us-slogan {
   font-size: 45px;
   line-height: 45px;
   padding: 0;
 }
 
-.about-us-orders-list-intro{
+.about-us-orders-list-intro {
   text-transform: uppercase;
   font-weight: normal;
   padding-top: 5px;
@@ -433,21 +433,21 @@ input[type="radio"].visually-hidden {
   display: inline-block;
 }
 
-.about-us-orders-list{
+.about-us-orders-list {
   padding: 0;
   margin: 0;
 }
 
 .about-us-order-item::before {
-    border: 2px solid #fb565a;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 12px;
-    width: 25px;
+  border: 2px solid #fb565a;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 25px;
 }
 
-.about-us-order-item{
+.about-us-order-item {
   position: relative;
   display: block;
   padding: 0 0 23px 35px;
@@ -455,26 +455,26 @@ input[type="radio"].visually-hidden {
 
 /* о нас в цифрах*/
 
-.about-us-digits{
+.about-us-digits {
   width: 360px;
   margin-top: 35px;
   margin-bottom: 100px;
- }
+}
 
- .about-us-digits-logo{
+.about-us-digits-logo {
   margin-bottom: 35px;
   display: block;
- }
+}
 
- .about-us-digits-intro{
+.about-us-digits-intro {
   text-transform: uppercase;
 
   margin-bottom: 60px;
   display: block;
   padding-left: 15px;
- }
+}
 
- .about-us-digits-list{
+.about-us-digits-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -487,47 +487,47 @@ input[type="radio"].visually-hidden {
   width: 105px;
 }
 
-.about-us-digits-item-percent{
+.about-us-digits-item-percent {
   font-size: 45px;
   line-height: 10.06px;
 }
 
-.about-us-digits-item-percent p{
+.about-us-digits-item-percent p {
   line-height: 18px;
 }
 
-.about-us-digits-item-percent sup{
+.about-us-digits-item-percent sup {
   top: -15px;
   font-size: 25px;
 }
 
 /*проекты*/
 
-.projects{
+.projects {
   position: relative;
   padding: 0;
 }
 
-.projects::before{
-   border: 2px solid #eeeeee;
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: -50px;
-    width: 1160px;
+.projects::before {
+  border: 2px solid #eeeeee;
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: -50px;
+  width: 1160px;
 }
 
-.projects:after{
-   border: 2px solid #eeeeee;
-    content: '';
-    position: absolute;
-    left: 20px;
-    bottom: -5px;
-    width: 1160px;
+.projects:after {
+  border: 2px solid #eeeeee;
+  content: '';
+  position: absolute;
+  left: 20px;
+  bottom: -5px;
+  width: 1160px;
 }
 
 
-.projects-list{
+.projects-list {
   margin: auto auto 84px auto;
   display: flex;
   justify-content: space-between;
@@ -536,8 +536,8 @@ input[type="radio"].visually-hidden {
 
 }
 
-.project-item{
-  opacity:0.2;
+.project-item {
+  opacity: 0.2;
   margin-bottom: 35px;
   width: 300px;
   text-align: center;
@@ -546,22 +546,22 @@ input[type="radio"].visually-hidden {
 }
 
 .project-item:hover,
-.project-item:focus{
-  opacity:1;
+.project-item:focus {
+  opacity: 1;
 }
 
-.project-item:active{
-  opacity:0.1;
+.project-item:active {
+  opacity: 0.1;
 }
 
-.project-item::after{
+.project-item::after {
   content: "";
   position: absolute;
 
   width: 2px;
   height: 52px;
-  right:0;
-  top:0;
+  right: 0;
+  top: 0;
   background-color: #eeeeee
 }
 
@@ -569,14 +569,14 @@ input[type="radio"].visually-hidden {
 /*footer контакты*/
 
 .footer-contacts {
-  position:relative;
+  position: relative;
 }
 
-.footer-contacts-map-image{
+.footer-contacts-map-image {
   width: 100%;
 }
 
-.contacts{
+.contacts {
   content: "";
   width: 319px;
   height: 308px;
@@ -589,39 +589,39 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
-.contacts-studio-name{
+.contacts-studio-name {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   margin: 0 0 24px 0;
 }
 
-.contacts-address{
+.contacts-address {
   font-size: 16px;
   line-height: 18px;
 }
 
-.contacts-phone{
+.contacts-phone {
   font-size: 16px;
   line-height: 18px;
   margin-top: 3px;
 }
 
-.write-us-button{
+.write-us-button {
   width: 219px;
   height: 50px;
 
   margin-top: 23px;
- }
+}
 
 /*footer социальные сети*/
 
-.footer-social{
- display: flex;
- margin-top: 65px;
+.footer-social {
+  display: flex;
+  margin-top: 65px;
 }
 
-.social-buttons{
+.social-buttons {
   display: flex;
   justify-content: space-between;
   width: 260px;
@@ -630,13 +630,13 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.footer-social-text-wrapper{
+.footer-social-text-wrapper {
   margin-left: 140px;
   vertical-align: center;
   padding: 0;
 }
 
-.footer-social-slogan{
+.footer-social-slogan {
   font-size: 36px;
   line-height: 36px;
 }
@@ -652,28 +652,29 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button:hover,
-.social-button:focus{
+.social-button:focus {
   background-color: #e74246;
 }
 
-.social-button:active{
+.social-button:active {
   background-color: #e74246;
   box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 }
 
-.social-button:active path{
+.social-button:active path {
   fill-opacity: 0.3;
+
 }
 
 /***catalog***/
 
-.inner-page{
+.inner-page {
   color: #666666;
   font-size: 16px;
   line-height: 18px;
 }
 
-.catalog-heading{
+.catalog-heading {
   margin: 0 0 52px 0;
 
   text-align: center;
@@ -693,7 +694,6 @@ input[type="radio"].visually-hidden {
 }
 
 /*каталог фильтр цены*/
-
 
 .range-filter {
   width: 260px;
@@ -756,8 +756,8 @@ input[type="radio"].visually-hidden {
   left: 160px;
 }
 
-.filters fieldset{
-  border:none;
+.filters fieldset {
+  border: none;
 }
 
 .price-controls {
@@ -795,7 +795,7 @@ input[type="radio"].visually-hidden {
 
 /*сортировка*/
 
-.order-controls{
+.order-controls {
   padding: 0;
   margin: 0 0 90px 40px;
 
@@ -807,19 +807,19 @@ input[type="radio"].visually-hidden {
 
   position: relative;
 
- }
-
-
-.order-controls span{
-    font-size: 18px;
 }
 
-.order-controls a{
+
+.order-controls span {
+  font-size: 18px;
+}
+
+.order-controls a {
   color: #000000;
   opacity: 0.3;
 }
 
-.order-options-list{
+.order-options-list {
   display: flex;
   justify-content: space-between;
 
@@ -831,7 +831,7 @@ input[type="radio"].visually-hidden {
   margin-left: 282px;
   font-size: 0;
   display: inline;
- }
+}
 
 .order-option-item {
   font-size: 14px;
@@ -843,18 +843,18 @@ input[type="radio"].visually-hidden {
 
 /*фильтры*/
 
-.filters{
+.filters {
   width: 260px;
 }
 
-.filters ul{
+.filters ul {
   line-height: 20px;
   padding: 0;
   margin: 0;
 }
 
 
-.filters legend{
+.filters legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -874,11 +874,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 60px;
 }
 
-.filters fieldset:nth-child(2) legend{
+.filters fieldset:nth-child(2) legend {
   margin-bottom: 15px;
 }
 
-.filters fieldset:nth-child(3) legend{
+.filters fieldset:nth-child(3) legend {
   margin-bottom: 15px;
 }
 
@@ -887,7 +887,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option-radio,
-.filter-option-checkbox{
+.filter-option-checkbox {
   margin-bottom: 20px;
   padding-left: 32px;
   opacity: 0.8;
@@ -969,7 +969,7 @@ input[type="radio"].visually-hidden {
 
 /*карточки товаров*/
 
-.catalog{
+.catalog {
   width: 800px;
   /*margin-right: 20px;*/
 }
@@ -981,10 +981,10 @@ input[type="radio"].visually-hidden {
   margin-left: 40px;
   position: relative;
 
- }
+}
 
-.catalog-item::before{
-   content: "";
+.catalog-item::before {
+  content: "";
 
   position: absolute;
 
@@ -1001,21 +1001,21 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-info {
   position: absolute;
-  right:0;
+  right: 0;
   bottom: 2px;
   width: inherit;
   text-align: center;
 }
 
- .catalog-list {
- display: flex;
- padding: 0;
- margin: 0;
- flex-wrap: wrap;
- margin-bottom: 60px;
- }
+.catalog-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
 
-.filter-button{
+.filter-button {
   width: 260px;
   height: 50px;
   background-color: #eeeeee;
@@ -1025,7 +1025,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.catalog-item-title{
+.catalog-item-title {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -1034,20 +1034,19 @@ input[type="radio"].visually-hidden {
   padding-top: 10px;
 }
 
-.price-button{
+.price-button {
   width: 200px;
   height: 50px;
- }
+}
 
 
 /*пагинация*/
-
 
 .pagination {
   margin-bottom: 63px;
 }
 
-.pagination-list{
+.pagination-list {
   display: flex;
   flex-wrap: wrap;
   width: 442px;
@@ -1059,12 +1058,13 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.pagination-item{
+.pagination-item {
 
   width: 49px;
   height: 50px;
 }
- .pagination-item a{
+
+.pagination-item a {
 
   color: #000000;
   background-color: #eeeeee;
@@ -1073,12 +1073,12 @@ input[type="radio"].visually-hidden {
   text-align: center;
   line-height: 25px;
 
-   display: block;
+  display: block;
   padding: 10px 19px;
 }
 
 
-.pagination-item .pagination-next{
+.pagination-item .pagination-next {
   color: #000000;
 
   background-color: #eeeeee;
@@ -1090,53 +1090,54 @@ input[type="radio"].visually-hidden {
 
 
 /*модальное окно*/
-.modal-contact-us-heading{
+
+.modal-contact-us-heading {
   font-size: 45px;
   line-height: 45px;
 }
 
-.modal-contact-us input{
- color: #eeeeee;
+.modal-contact-us input {
+  color: #eeeeee;
 }
 
-.send-button{
+.send-button {
   width: 260px;
   height: 50px;
 }
 
-.contact-us-name input{
+.contact-us-name input {
   width: 360px;
   height: 50px;
 }
 
 
-.modal-contact-us input{
-  border:1px solid #d7dcde;
+.modal-contact-us input {
+  border: 1px solid #d7dcde;
 }
 
 .modal-contact-us input:focus,
-.modal-contact-us input:hover{
-  border:1px solid #b4b9bb;
+.modal-contact-us input:hover {
+  border: 1px solid #b4b9bb;
 }
 
-.modal-contact-us input:active{
-  border:1px solid #000000;
+.modal-contact-us input:active {
+  border: 1px solid #000000;
 }
 
-.modal-contact-us label{
+.modal-contact-us label {
   opacity: 0.5;
 }
 
-.modal-contact-us label:active{
+.modal-contact-us label:active {
   color: #000000;
 }
 
-.modal-contact-us label:invalid{
+.modal-contact-us label:invalid {
   color: #e74246;
 }
 
-.modal-contact-us input:invalid{
-  border:1px solid #e74246;
+.modal-contact-us input:invalid {
+  border: 1px solid #e74246;
 }
 
 /*styleguide*/
@@ -1146,87 +1147,87 @@ input[type="radio"].visually-hidden {
 .pagination-item a:hover,
 .pagination-item a:focus,
 .pagination-next:hover,
-.pagination-next:focus{
+.pagination-next:focus {
   background-color: #dfdfdf;
 }
 
 .filter-button:active,
 .pagination-item a:active,
-.pagination-next:active{
+.pagination-next:active {
   background-color: #d5d5d5;
 }
 
-.pagination-item-current a{
+.pagination-item-current a {
   background-color: #ffffff;
-  border:1px solid #dbdbdb;
+  border: 1px solid #dbdbdb;
 }
 
-.order-option-item{
+.order-option-item {
   opacity: 0.3;
 }
 
 .order-option-item:hover,
-.order-option-item:focus{
+.order-option-item:focus {
   opacity: 0.6;
 }
 
 .order-option-item-current,
-.order-option-item:active{
+.order-option-item:active {
   opacity: 1;
 }
 
-.order-option-item-current{
-    font-size: 14px;
-    display: inline-block;
-    vertical-align: baseline;
+.order-option-item-current {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
-.order-directions-item{
+.order-directions-item {
   opacity: 0.2;
 }
 
 .order-directions-item:hover,
-.order-directions-item:focus{
+.order-directions-item:focus {
   opacity: 1;
   color: #a6a6a6;
 }
 
 .order-directions-item-current,
-.order-directions-item:active{
+.order-directions-item:active {
   opacity: 1;
 }
 
 .filter-option-radio label,
-.filter-option-checkbox label{
+.filter-option-checkbox label {
   color: #283136;
 }
 
 .filter-input-radio,
-.filter-input-checkbox{
+.filter-input-checkbox {
   opacity: 0.4;
 }
 
-.filter-option-radio:hover+label,
-.filter-option-radio:focus+label,
-.filter-option-checkbox:focus+label{
+.filter-option-radio:hover + label,
+.filter-option-radio:focus + label,
+.filter-option-checkbox:focus + label {
   color: #000000;
 }
 
 .filter-input-radio:hover,
 .filter-input-radio:focus,
 .filter-input-checkbox:focus,
-.filter-input-checkbox:hover{
+.filter-input-checkbox:hover {
   opacity: 1;
 }
 
 .filter-input-radio:disabled,
-.filter-input-checkbox:disabled{
+.filter-input-checkbox:disabled {
   opacity: 0.1;
   color: #283136;
 }
 
-.filter-option-radio:disabled+label,
-.filter-option-checkbox:disabled+label{
+.filter-option-radio:disabled + label,
+.filter-option-checkbox:disabled + label {
   opacity: 0.3;
 }
 
