@@ -1001,6 +1001,10 @@ input[type="radio"].visually-hidden {
 
 }
 
+.catalog-item-description {
+  margin-bottom: 30px;
+}
+
 .catalog-item-info {
   position: absolute;
   right: 0;
@@ -1093,6 +1097,39 @@ input[type="radio"].visually-hidden {
 
 /*модальное окно*/
 
+.modal-contact-us {
+  position: fixed;
+  width: 760px;
+  padding: 73px 100px 85px 100px;
+
+  left: 240px;
+  bottom: 178px;
+  background-color: #ffffff;
+
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 1, 0.75);
+}
+
+
+.modal-contact-us-form :-ms-input-placeholder {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.modal-contact-us-form ::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.modal-contact-us-form ::-moz-placeholder {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.modal-contact-us-form :-moz-placeholder {
+  color: #dddddd;
+}
+
+
 .modal-contact-us-heading {
   font-size: 45px;
   line-height: 45px;
@@ -1100,8 +1137,60 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.modal-contact-us input {
-  color: #eeeeee;
+.modal-contact-us-name {
+  padding: 0;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+
+
+.contact-us-name input {
+  width: 360px;
+  height: 50px;
+}
+
+
+.modal-contact-us-email {
+  display: inline-block;
+  margin-bottom: 13px;
+  box-sizing: border-box;
+}
+
+
+
+
+.modal-contact-us-form textarea {
+  width: 760px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-left: 16px;
+  border-radius: 5px;
+  border: 2px solid #d7dcde;
+}
+
+.modal-contact-us-form input[type="text"],
+.modal-contact-us-form input[type="email"] {
+  width: 358px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+
+  border-radius: 5px;
+  border: 2px solid #d7dcde;
+
+}
+
+.modal-contact-us-comment {
+  margin-top: 18px;
+}
+
+.modal-contact-us label {
+  display: block;
+  margin-bottom: 15px;
+  color: #000000;
+  font-weight: bold;
 }
 
 .send-button {
@@ -1110,43 +1199,79 @@ input[type="radio"].visually-hidden {
   margin-top: 48px;
 }
 
-.contact-us-name input {
-  width: 360px;
-  height: 50px;
+/*закрытие модального окна*/
+
+.modal-close {
+  width: 21px;
+  height: 21px;
+
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  ;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  width: 21px;
+  height: 3px;
+
+  top: 10px;
+  left: 0;
+
+  background-color: #fecccd;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 
 
-.modal-contact-us input {
-  border: 1px solid #d7dcde;
-}
-
-/*
-.modal-contact-us input:focus,
-.modal-contact-us input:hover {
-  border: 1px solid #b4b9bb;
-}
+/*styleguide для модального окна*/
 
 .modal-contact-us input:active {
-  border: 1px solid #000000;
+  border: 2px solid #b4b9bb;
 }
 
-.modal-contact-us label {
-  opacity: 0.5;
+
+.modal-contact-us input:focus,
+.modal-contact-us input:hover {
+  border: 2px solid #000000;
+  outline: none;
 }
 
-.modal-contact-us label:active {
-  color: #000000;
-}
 
-.modal-contact-us label:invalid {
+.modal-contact-us input:invalid {
+  border: 2px solid #e74246;
   color: #e74246;
 }
 
-.modal-contact-us input:invalid {
-  border: 1px solid #e74246;
-}*/
+.modal-close:hover::before,
+.modal-close:hover::after,
+.modal-close:focus::before,
+.modal-close:focus::after {
+  background-color: #fb565a;
+}
 
-/*styleguide*/
+.modal-close:active::before,
+.modal-close:active::after {
+  background-color: #ffeeee;
+}
+
+
+/*styleguide фильтры*/
 
 .filter-button:hover,
 .filter-button:focus,
@@ -1235,111 +1360,4 @@ input[type="radio"].visually-hidden {
 .filter-option-radio:disabled + label,
 .filter-option-checkbox:disabled + label {
   opacity: 0.3;
-}
-
-
-
-.catalog-item-description {
-  margin-bottom: 30px;
-}
-
-.modal-contact-us {
-  position: fixed;
-  width: 760px;
-  padding: 73px 100px 85px 100px;
-
-  left: 240px;
-  bottom: 178px;
-  background-color: #ffffff;
-
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 1, 0.75);
-}
-
-.modal-contact-us-form label {
-  color: #000000;
-}
-
-.modal-close {
-  width: 21px;
-  height: 21px;
-
-  background-color: #ffffff;
-  border: 0;
-  cursor: pointer;
-  font-size: 0;
-
-  position: absolute;
-  top: 78px;
-  right: 90px;
-  ;
-}
-
-.modal-close::before,
-.modal-close::after {
-  content: "";
-
-  position: absolute;
-  width: 21px;
-  height: 3px;
-
-  top: 10px;
-  left: 0;
-
-  background-color: #fecccd;
-}
-
-.modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  transform: rotate(-45deg);
-}
-
-.modal-contact-us-name {
-  padding: 0;
-  display: inline-block;
-  margin-right: 40px;
-}
-
-.modal-contact-us-email {
-  display: inline-block;
-  margin-bottom: 13px;
-  box-sizing: border-box;
-}
-
-.modal-contact-us-form ::-webkit-input-placeholder {
-  color: #dddddd;
-}
-
-.modal-contact-us-form ::-moz-placeholder {
-  color: #dddddd;
-}
-
-.modal-contact-us-form :-moz-placeholder {
-  color: #dddddd;
-}
-
-.modal-contact-us-form :-ms-input-placeholder {
-  color: #dddddd;
-}
-
-.modal-contact-us-form textarea {
-  width: 760px;
-  box-sizing: border-box;
-  padding-top: 16px;
-  padding-left: 16px;
-}
-
-.modal-contact-us-form input[type="text"],
-.modal-contact-us-form input[type="email"] {
-  width: 358px;
-  box-sizing: border-box;
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-bottom: 16px;
-}
-
-.modal-contact-us-comment {
-  margin-top: 18px;
 }
