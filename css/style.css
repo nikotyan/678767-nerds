@@ -2,13 +2,14 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
 
   background-color: #ffffff;
+  width: 1440px;
 }
 
 .container {
@@ -152,8 +153,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a:active,
 .user-navigation a:active {
-  color: #000000;
-  opacity: 0.3;
+  color: #ababab;
 }
 
 .user-navigation-current,
@@ -199,11 +199,6 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.cart-link:hover::before,
-.cart-link:focus::before,
-.cart-link:active::before {
-  opacity: 1;
-}
 
 /*преимущества*/
 
@@ -561,8 +556,14 @@ input[type="radio"].visually-hidden {
   width: 2px;
   height: 52px;
   right: 0;
-  top: 0;
-  background-color: #eeeeee
+  top: 50%;
+  margin-top: -34px;;
+  background-color:  #eeeeee
+}
+
+.project-item:nth-child(4n)::after{
+  width:0;
+  height:0;
 }
 
 
@@ -796,6 +797,7 @@ input[type="radio"].visually-hidden {
 /*сортировка*/
 
 .order-controls {
+  display: flex;
   padding: 0;
   margin: 0 0 90px 40px;
 
@@ -830,7 +832,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 50px;
   margin-left: 282px;
   font-size: 0;
-  display: inline;
 }
 
 .order-option-item {
@@ -998,6 +999,26 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 
 }
+
+.catalog-item:focus::before,
+.catalog-item:hover::before{
+  content: "";
+  position: absolute;
+
+  width: 360px;
+  height: 40px;
+
+  left: 0;
+  top: -40px;
+  background-image: url("../img/browser-focus.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
+
+
+
 
 .catalog-item-description {
   margin-bottom: 30px;
