@@ -9,7 +9,7 @@ body {
   color: #000000;
 
   background-color: #ffffff;
-  width: 1440px;
+/*  width: 1440px;*/
 }
 
 .container {
@@ -690,10 +690,9 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-heading {
-  margin: 0 0 52px 0;
-
+  margin: 0 0 0 0;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 76px;
   padding-bottom: 108px;
   font-size: 55px;
   line-height: 55px;
@@ -813,11 +812,7 @@ input[type="radio"].visually-hidden {
 .order-controls {
   display: flex;
   padding: 0;
-  margin: 0 0 90px 40px;
-
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: bold;
+  margin: 59px 0 90px 40px;
   text-transform: uppercase;
   color: #000000;
 
@@ -828,11 +823,14 @@ input[type="radio"].visually-hidden {
 
 .order-controls span {
   font-size: 18px;
+  line-height: 18px;
 }
 
 .order-controls a {
   color: #000000;
   opacity: 0.3;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .order-options-list {
@@ -844,22 +842,46 @@ input[type="radio"].visually-hidden {
   margin: 0;
   width: 280px;
   margin-bottom: 50px;
-  margin-left: 282px;
+  margin-left: 267px;
   font-size: 0;
 }
 
-.order-option-item {
-  font-size: 14px;
-  display: inline-block;
-  vertical-align: baseline;
-  margin: 0 25px;
+
+
+.order-option-item a:hover,
+.order-option-item a:focus {
+  opacity: 0.6;
 }
+
+.order-option-item-current a,
+.order-option-item a:active {
+  color: #000000;
+  opacity: 1;
+}
+
+
+.order-directions-item a {
+  opacity: 0.2;
+}
+
+.order-directions-item a:hover,
+.order-directions-item a:focus {
+  opacity: 1;
+  color: #a6a6a6;
+}
+
+.order-directions-item-current a,
+.order-directions-item a:active {
+  opacity: 1;
+}
+
 
 
 /*фильтры*/
 
 .filters {
   width: 260px;
+  margin-top: 56px;
 }
 
 .filters ul {
@@ -872,7 +894,6 @@ input[type="radio"].visually-hidden {
 .filters legend {
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 26px;
@@ -1326,40 +1347,6 @@ input[type="radio"].visually-hidden {
   border: 1px solid #dbdbdb;
 }
 
-.order-option-item {
-  opacity: 0.3;
-}
-
-.order-option-item:hover,
-.order-option-item:focus {
-  opacity: 0.6;
-}
-
-.order-option-item-current,
-.order-option-item:active {
-  opacity: 1;
-}
-
-.order-option-item-current {
-  font-size: 14px;
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-.order-directions-item {
-  opacity: 0.2;
-}
-
-.order-directions-item:hover,
-.order-directions-item:focus {
-  opacity: 1;
-  color: #a6a6a6;
-}
-
-.order-directions-item-current,
-.order-directions-item:active {
-  opacity: 1;
-}
 
 .filter-option-radio label,
 .filter-option-checkbox label {
