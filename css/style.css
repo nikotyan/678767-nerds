@@ -394,7 +394,7 @@ input[type="radio"].visually-hidden {
 
 .about-us {
   display: flex;
-  margin: auto auto auto auto;
+  margin: auto auto 100px auto;
   justify-content: space-between;
   position: relative;
 }
@@ -413,22 +413,23 @@ input[type="radio"].visually-hidden {
   padding: 70px 0 0 0;
 }
 
-.about-us-description p {
-  padding-top: 18px;
-}
+
 
 .about-us-slogan {
   font-size: 45px;
-  line-height: 45px;
-  padding: 0;
+  line-height: 46px;
+  margin: 0 0 32px 0;
+}
+
+.about-us-principles{
+    margin: 0 0 40px 0;
+    padding: 0;
 }
 
 .about-us-orders-list-intro {
   text-transform: uppercase;
   font-weight: normal;
-  padding-top: 5px;
-  margin: 0 0 10px 0;
-  display: inline-block;
+  margin: 0 0 25px 0;
 }
 
 .about-us-orders-list {
@@ -441,7 +442,7 @@ input[type="radio"].visually-hidden {
   content: '';
   position: absolute;
   left: 0;
-  top: 12px;
+  top: 10px;
   width: 25px;
 }
 
@@ -456,7 +457,7 @@ input[type="radio"].visually-hidden {
 .about-us-digits {
   width: 360px;
   margin-top: 35px;
-  margin-bottom: 100px;
+  /*margin-bottom: 100px;*/
 }
 
 .about-us-digits-logo {
@@ -526,7 +527,7 @@ input[type="radio"].visually-hidden {
 
 
 .projects-list {
-  margin: auto auto 84px auto;
+  margin: auto auto 78px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -534,8 +535,7 @@ input[type="radio"].visually-hidden {
 
 }
 
-.project-item {
-  opacity: 0.2;
+.project-item{
   margin-bottom: 35px;
   width: 300px;
   text-align: center;
@@ -543,12 +543,16 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.project-item:hover,
-.project-item:focus {
+.project-item img{
+  opacity: 0.2;
+}
+
+.project-item img:hover,
+.project-item img:focus {
   opacity: 1;
 }
 
-.project-item:active {
+.project-item img:active {
   opacity: 0.1;
 }
 
@@ -561,13 +565,17 @@ input[type="radio"].visually-hidden {
   right: 0;
   top: 50%;
   margin-top: -34px;;
-  background-color:  #eeeeee
+  background-color:  #eeeeee;
+  opacity: 1;
 }
+
 
 .project-item:nth-child(4n)::after{
   width:0;
   height:0;
 }
+
+
 
 
 /*footer контакты*/
@@ -654,12 +662,16 @@ input[type="radio"].visually-hidden {
 
 .footer-social-text-wrapper {
   margin-left: 140px;
-  padding: 0;
+  padding: 3px 0 0 0;
 }
 
-.footer-social-slogan {
+.footer-social-slogan,
+.inner-page .footer-social-slogan{
   font-size: 36px;
   line-height: 36px;
+  padding: 0;
+  margin: 0;
+  color: #000000;
 }
 
 .social-button {
@@ -694,6 +706,8 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 18px;
 }
+
+
 
 .catalog-heading {
   margin: 0 0 0 0;
@@ -1191,6 +1205,7 @@ input[type="radio"].visually-hidden {
 
 }
 
+
 .catalog-list {
   display: flex;
   padding: 0;
@@ -1209,7 +1224,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.catalog-item-title {
+.catalog-item-title a{
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -1226,7 +1241,7 @@ input[type="radio"].visually-hidden {
 /*пагинация*/
 
 .pagination {
-  margin-bottom: 63px;
+  margin-bottom: 60px;
   margin-left: 20px;
 }
 
@@ -1446,6 +1461,8 @@ input[type="radio"].visually-hidden {
 
 /*styleguide фильтры*/
 
+
+
 .filter-button:hover,
 .filter-button:focus,
 .pagination-item a:hover,
@@ -1453,12 +1470,15 @@ input[type="radio"].visually-hidden {
 .pagination-next:hover,
 .pagination-next:focus {
   background-color: #dfdfdf;
+  color: #000000;
+
 }
 
 .filter-button:active,
 .pagination-item a:active,
 .pagination-next:active {
   background-color: #d5d5d5;
+  color: #000000;
 }
 
 .pagination-item-current a {
@@ -1471,4 +1491,9 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-description {
   margin:0 0 30px 0;
+}
+
+.footer-discounts,
+.inner-page .footer-discounts {
+  color: #444444;
 }
