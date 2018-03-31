@@ -1224,12 +1224,15 @@ input[type="radio"].visually-hidden {
 }
 
 
-.catalog-item-title a{
+.catalog-item-title{
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
   text-transform: uppercase;
   margin: 0 0 13px 0;
+}
+
+.catalog-item-title a{
+  color: #000000;
 }
 
 .price-button {
@@ -1497,3 +1500,5 @@ input[type="radio"].visually-hidden {
 .inner-page .footer-discounts {
   color: #444444;
 }
+
+
