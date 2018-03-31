@@ -1219,6 +1219,7 @@ input[type="radio"].visually-hidden {
 
 .pagination {
   margin-bottom: 63px;
+  margin-left: 20px;
 }
 
 .pagination-list {
@@ -1231,20 +1232,15 @@ input[type="radio"].visually-hidden {
 
 
   justify-content: space-between;
-}
-
-.pagination-item {
-
-  width: 49px;
-  height: 50px;
+  margin-left: 20px;
 }
 
 .pagination-item a {
-
+  box-sizing: border-box;
   color: #000000;
   background-color: #eeeeee;
   width: 50px;
-  height: 30px;
+  height: 50px;
   text-align: center;
   line-height: 25px;
 
