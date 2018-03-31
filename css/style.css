@@ -156,9 +156,44 @@ input[type="radio"].visually-hidden {
   color: #ababab;
 }
 
-.user-navigation-current,
-.site-navigation-current a {
-  border-bottom: 1px solid #fb565a;
+.site-navigation li,
+.user-navigation li{
+  position:relative;
+
+}
+
+.site-navigation-current:after{
+    content: "";
+    height: 2px;
+    background-color: #fb565a;
+    position: absolute;
+    left: 0;
+    right: 45px;
+    bottom: 5px;
+}
+
+.user-navigation-current:after{
+ content: "";
+    height: 2px;
+    background-color: #fb565a;
+    position: absolute;
+    left: 45px;
+    right: 0;
+    bottom: -13px;
+}
+
+.user-navigation a::before {
+  content: "";
+
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 82px;
+  left: 45px;
+
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .main-header-logo {
@@ -181,23 +216,8 @@ input[type="radio"].visually-hidden {
   padding-right: 0;
 }
 
-.cart-link {
-  position: relative;
-}
 
-.cart-link::before {
-  content: "";
 
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 82px;
-  left: 45px;
-
-  background-image: url("../img/cart-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
 
 
 /*преимущества*/
@@ -776,7 +796,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls {
   font-size: 0;
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .price-controls label {
