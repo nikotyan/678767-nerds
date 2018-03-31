@@ -9,7 +9,7 @@ body {
   color: #000000;
 
   background-color: #ffffff;
-/*  width: 1440px;*/
+  width: 1440px;
 }
 
 .container {
@@ -181,6 +181,7 @@ input[type="radio"].visually-hidden {
     right: 0;
     bottom: -13px;
 }
+
 
 .user-navigation a::before {
   content: "";
@@ -935,7 +936,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters fieldset:nth-child(3) legend {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .filters fieldset:nth-child(2) {
@@ -960,6 +961,8 @@ input[type="radio"].visually-hidden {
   user-select: none;
 }
 
+/*чекбоксы картинки и их состояния*/
+
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -967,16 +970,47 @@ input[type="radio"].visually-hidden {
   width: 23px;
   height: 23px;
 
-  left: -35px;
+  left: -32px;
   top: 0;
 
-  background-image: url("../img/checkbox-off.svg");
+  background-image:  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23'%3e%3cpath fill='#b8b8b8' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox + label:focus::before,
+.filter-input-checkbox + label:hover::before{
+  content: "";
+  position: absolute;
+
+  width: 23px;
+  height: 23px;
+
+  left: -32px;
+  top: 0;
+
+  background-image:  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23'%3e%3cpath fill='#000000' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox + label:disabled::before{
+  content: "";
+  position: absolute;
+
+  width: 23px;
+  height: 23px;
+
+  left: -32px;
+  top: 0;
+
+  background-image:  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23'%3e%3cpath fill='#ededed' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
 
   position: absolute;
@@ -985,43 +1019,113 @@ input[type="radio"].visually-hidden {
   height: 23px;
 
   top: 0;
-  left: -35px;
-  background-image: url("../img/checkbox-on.svg");
+  left: -32px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23'%3e%3cpath fill='#b8b8b8' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3e%3cpath fill='#b8b8b8' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+.filter-input-checkbox:checked + label:hover::before,
+.filter-input-checkbox:checked + label:focus::before{
+  content: "";
+
+  position: absolute;
+
+  width: 27px;
+  height: 23px;
+
+  top: 0;
+  left: -32px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23'%3e%3cpath fill='#000000' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3e%3cpath fill='#000000' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label:disabled::before{
+  content: "";
+
+  position: absolute;
+
+  width: 27px;
+  height: 23px;
+
+  top: 0;
+  left: -32px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23'%3e%3cpath fill='#ededed' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3e%3cpath fill='#ededed' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+/*радиобаттоны и их состояния*/
+
 
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
 
-  width: 25px;
-  height: 25px;
+  width: 21px;
+  height: 21px;
 
 
-  left: -30px;
+  left: -32px;
   top: -5px;
 
-  background-image: url("../img/radio-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  border: 4px solid #000000;
+  border-radius: 50%;
+  opacity: 0.28;
 }
 
 
-.filter-input-radio:checked + label::after {
+.filter-input-radio:checked + label::after{
   content: "";
 
   position: absolute;
 
-  width: 25px;
-  height: 25px;
+  width: 9px;
+  height: 9px;
 
-  top: -5px;
-  left: -30px;
-  background-image: url("../img/radio-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  left: -22px;
+  top: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+  opacity: 0.28;
 }
+
+.filter-input-radio + label:hover::before,
+.filter-input-radio + label:focus::before,
+.filter-input-radio + label:hover::after,
+.filter-input-radio + label:focus::after{
+  opacity: 1;
+}
+
+.filter-input-radio + label:disabled::before,
+.filter-input-radio + label:disabled::after{
+  opacity: 0.07;
+}
+
+
+
+.filter-option-radio+label,
+.filter-option-checkbox+label {
+  color: #283136;
+}
+
+.filter-input-radio:hover + label,
+.filter-input-radio:focus + label,
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label{
+  color: #000000;
+}
+
+.filter-input-radio+ label:disabled,
+.filter-input-checkbox:disabled+ label {
+  color: #283136;
+  opacity: 0.3;
+}
+
+
+
 
 /*карточки товаров*/
 
@@ -1368,36 +1472,4 @@ input[type="radio"].visually-hidden {
 }
 
 
-.filter-option-radio label,
-.filter-option-checkbox label {
-  color: #283136;
-}
 
-.filter-input-radio,
-.filter-input-checkbox {
-  opacity: 0.4;
-}
-
-.filter-option-radio:hover + label,
-.filter-option-radio:focus + label,
-.filter-option-checkbox:focus + label {
-  color: #000000;
-}
-
-.filter-input-radio:hover,
-.filter-input-radio:focus,
-.filter-input-checkbox:focus,
-.filter-input-checkbox:hover {
-  opacity: 1;
-}
-
-.filter-input-radio:disabled,
-.filter-input-checkbox:disabled {
-  opacity: 0.1;
-  color: #283136;
-}
-
-.filter-option-radio:disabled + label,
-.filter-option-checkbox:disabled + label {
-  opacity: 0.3;
-}
