@@ -137,11 +137,16 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a {
-  padding: 74px 45px 0 0;
+  margin: 74px 45px 0 0;
+  padding: 0;
+}
+
+.site-navigation li:nth-child(4n) a {
+  margin-right: 0;
 }
 
 .user-navigation a {
-  padding: 74px 0 0 85px;
+  margin: 74px 0 0 85px;
 }
 
 .site-navigation a:focus,
@@ -162,26 +167,11 @@ input[type="radio"].visually-hidden {
 
 }
 
-.site-navigation-current:after{
-    content: "";
-    height: 2px;
-    background-color: #fb565a;
-    position: absolute;
-    left: 0;
-    right: 45px;
-    bottom: 5px;
+.site-navigation-current a,
+.user-navigation-current a{
+  border-bottom: 2px solid #fb565a;
+  padding: 0 0 5px 0;
 }
-
-.user-navigation-current:after{
- content: "";
-    height: 2px;
-    background-color: #fb565a;
-    position: absolute;
-    left: 45px;
-    right: 0;
-    bottom: -13px;
-}
-
 
 .user-navigation a::before {
   content: "";
@@ -189,7 +179,7 @@ input[type="radio"].visually-hidden {
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 82px;
+  top: 5px;
   left: 45px;
 
   background-image: url("../img/cart-icon.svg");
@@ -211,14 +201,6 @@ input[type="radio"].visually-hidden {
 .main-header-logo:active {
   opacity: 0.3;
 }
-
-
-.site-navigation li:nth-child(4n) a {
-  padding-right: 0;
-}
-
-
-
 
 
 /*преимущества*/
