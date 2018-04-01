@@ -670,6 +670,10 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
+.social-buttons svg {
+  vertical-align: middle;
+}
+
 .footer-social-text-wrapper {
   margin-left: 140px;
   padding: 3px 0 0 0;
