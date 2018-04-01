@@ -1301,23 +1301,70 @@ input[type="radio"].visually-hidden {
 }
 
 
-.modal-contact-us-form :-ms-input-placeholder {
+.modal-contact-us-form input :-ms-input-placeholder {
   color: #000000;
   opacity: 0.5;
 }
 
-.modal-contact-us-form ::-webkit-input-placeholder {
+.modal-contact-us-form input::-webkit-input-placeholder {
   color: #000000;
   opacity: 0.5;
 }
 
-.modal-contact-us-form ::-moz-placeholder {
-  color: #000000;
+.modal-contact-us-form input::-moz-placeholder {
+  color: #000999;
   opacity: 0.5;
 }
 
-.modal-contact-us-form :-moz-placeholder {
-  color: #dddddd;
+.modal-contact-us-form input:-moz-placeholder {
+  color: #000999;
+  opacity: 0.5;
+}
+
+/*hover*/
+
+.modal-contact-us-form input:hover :-ms-input-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.modal-contact-us-form input:hover::-webkit-input-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+
+.modal-contact-us-form input:hover::-moz-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.modal-contact-us-form input:hover:-moz-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+/*focus*/
+
+.modal-contact-us-form input:focus :-ms-input-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.modal-contact-us-form input:focus::-webkit-input-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+
+.modal-contact-us-form input:focus::-moz-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.modal-contact-us-form input:focus:-moz-placeholder {
+  color: #444444;
+  opacity: 0.5;
 }
 
 
@@ -1432,15 +1479,18 @@ input[type="radio"].visually-hidden {
 
 /*styleguide для модального окна*/
 
-.modal-contact-us input:active {
-  border: 2px solid #b4b9bb;
+.modal-contact-us input:focus,
+.modal-contact-us textarea:focus{
+  outline-color: #000000;
+  border: 2px solid #000000;
+
 }
 
 
-.modal-contact-us input:focus,
-.modal-contact-us input:hover {
-  border: 2px solid #000000;
-  outline: none;
+
+.modal-contact-us input:hover,
+.modal-contact-us textarea:hover{
+  border: 2px solid #b4b9bb;
 }
 
 
