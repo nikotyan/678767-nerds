@@ -642,19 +642,7 @@ input[type="radio"].visually-hidden {
   margin-top: 23px;
 }
 
-.footer-contacts::after {
-  content: "";
 
-  width: 231px;
-  height: 190px;
-  position: absolute;
-  top: 92px;
-  left: 820px;
-
-  background-image: url("../img/map-marker.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
 
 /*footer социальные сети*/
 
