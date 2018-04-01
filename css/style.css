@@ -438,7 +438,7 @@ input[type="radio"].visually-hidden {
 
 .about-us-orders-list-intro {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: bold;
   margin: 0 0 25px 0;
 }
 
@@ -828,6 +828,7 @@ input[type="radio"].visually-hidden {
   margin-left: 10px;
 
   font-size: 16px;
+  line-height: 22px;
   text-align: center;
 
   border: none;
@@ -939,7 +940,7 @@ input[type="radio"].visually-hidden {
 
 
 .filters fieldset:first-child {
-  margin-bottom: 60px;
+  margin-bottom: 54px;
 }
 
 .filters fieldset:nth-child(2) legend {
@@ -1284,7 +1285,7 @@ input[type="radio"].visually-hidden {
   width: 50px;
   height: 50px;
   text-align: center;
-  line-height: 25px;
+  line-height: 18px;
 
   display: block;
   padding: 10px 19px;
@@ -1471,6 +1472,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 15px;
   color: #000000;
   font-weight: bold;
+  line-height: 18px;
+
 }
 
 .send-button {
@@ -1594,5 +1597,5 @@ input[type="radio"].visually-hidden {
 }
 
 .price-heading {
-    letter-spacing: 0.01em;
+    letter-spacing: 1px;
 }
