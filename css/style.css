@@ -438,7 +438,7 @@ input[type="radio"].visually-hidden {
 .about-us-orders-list-intro {
   text-transform: uppercase;
   font-weight: bold;
-  margin: 0 0 25px 0;
+  margin: 0 0 20px 0;
 }
 
 .about-us-orders-list {
@@ -478,7 +478,7 @@ input[type="radio"].visually-hidden {
 .about-us-digits-intro {
   text-transform: uppercase;
 
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   display: block;
   padding-left: 15px;
 }
@@ -501,7 +501,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
-.about-us-digits-item-percent p {
+.about-us-digits-item p {
   line-height: 18px;
 }
 
