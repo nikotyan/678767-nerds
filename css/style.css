@@ -499,7 +499,7 @@ input[type="radio"].visually-hidden {
 
 .about-us-digits-item-percent {
   font-size: 45px;
-  line-height: 10.06px;
+  line-height: 18px;
 }
 
 .about-us-digits-item-percent p {
@@ -860,6 +860,7 @@ input[type="radio"].visually-hidden {
 .order-controls span {
   font-size: 18px;
   line-height: 18px;
+  font-weight: bold;
 }
 
 .order-controls a {
