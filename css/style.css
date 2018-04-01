@@ -74,6 +74,7 @@ img {
   line-height: 18px;
   font-weight: 500;
   padding-top: 17px;
+  padding-bottom: 17px;
   box-sizing: border-box;
 }
 
@@ -817,6 +818,7 @@ input[type="radio"].visually-hidden {
 
   font-size: 16px;
   font-weight: 500;
+  line-height: 22px;
   text-transform: uppercase;
 }
 
@@ -1072,8 +1074,8 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
 
-  width: 21px;
-  height: 21px;
+  width: 17px;
+  height: 17px;
 
 
   left: -32px;
@@ -1093,8 +1095,8 @@ input[type="radio"].visually-hidden {
   width: 9px;
   height: 9px;
 
-  left: -22px;
-  top: 5px;
+  left: -24px;
+  top: 3px;
   background-color: #000000;
   border-radius: 50%;
   opacity: 0.28;
@@ -1303,6 +1305,7 @@ input[type="radio"].visually-hidden {
 /*модальное окно*/
 
 .modal-contact-us {
+  display: none;
   position: fixed;
   width: 760px;
   padding: 73px 100px 85px 100px;
