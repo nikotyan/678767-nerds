@@ -66,10 +66,15 @@ img {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
-  line-height: 50px;
+
   background-color: #fb565a;
   border: none;
   border-radius: 4px;
+  font-weight: 500;
+  line-height: 18px;
+  font-weight: 500;
+  padding-top: 17px;
+  box-sizing: border-box;
 }
 
 .button:hover,
@@ -107,6 +112,7 @@ input[type="radio"].visually-hidden {
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
+  font-weight: 500;
   color: #000000;
   display: flex;
   margin: auto;
@@ -228,7 +234,7 @@ input[type="radio"].visually-hidden {
 .feature-item-slogan {
   font-size: 55px;
   line-height: 55px;
-  font-weight: normal;
+  font-weight: 500;
 
   max-width: 600px;
   margin: 0;
@@ -357,6 +363,7 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   line-height: 30px;
   margin-bottom: 0;
+  font-weight: 700;
 }
 
 .product-item:nth-child(2) .button {
@@ -418,7 +425,8 @@ input[type="radio"].visually-hidden {
 
 .about-us-slogan {
   font-size: 45px;
-  line-height: 46px;
+  line-height: 45px;
+  font-weight: 500;
   margin: 0 0 32px 0;
 }
 
@@ -429,7 +437,7 @@ input[type="radio"].visually-hidden {
 
 .about-us-orders-list-intro {
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 500;
   margin: 0 0 25px 0;
 }
 
@@ -629,7 +637,6 @@ input[type="radio"].visually-hidden {
 .write-us-button {
   width: 219px;
   height: 50px;
-
   margin-top: 23px;
 }
 
@@ -672,6 +679,7 @@ input[type="radio"].visually-hidden {
 .inner-page .footer-social-slogan {
   font-size: 36px;
   line-height: 36px;
+  font-weight: bold;
   padding: 0;
   margin: 0;
   color: #000000;
@@ -719,6 +727,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 108px;
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
 
   color: #000000;
   width: auto;
@@ -807,6 +816,7 @@ input[type="radio"].visually-hidden {
   width: 50%;
 
   font-size: 16px;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -913,6 +923,7 @@ input[type="radio"].visually-hidden {
 .filters legend {
   font-size: 18px;
   line-height: 30px;
+  font-weight: bold;
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 26px;
@@ -1307,21 +1318,33 @@ input[type="radio"].visually-hidden {
 .modal-contact-us-form input :-ms-input-placeholder {
   color: #000000;
   opacity: 0.5;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .modal-contact-us-form input::-webkit-input-placeholder {
   color: #000000;
   opacity: 0.5;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .modal-contact-us-form input::-moz-placeholder {
   color: #000999;
   opacity: 0.5;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .modal-contact-us-form input:-moz-placeholder {
   color: #000999;
   opacity: 0.5;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 /*hover*/
@@ -1329,22 +1352,34 @@ input[type="radio"].visually-hidden {
 .modal-contact-us-form input:hover :-ms-input-placeholder {
   color: #444444;
   opacity: 0.5;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .modal-contact-us-form input:hover::-webkit-input-placeholder {
   color: #444444;
   opacity: 0.5;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 
 .modal-contact-us-form input:hover::-moz-placeholder {
   color: #444444;
   opacity: 0.5;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .modal-contact-us-form input:hover:-moz-placeholder {
   color: #444444;
   opacity: 0.5;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 /*focus*/
@@ -1374,6 +1409,7 @@ input[type="radio"].visually-hidden {
 .modal-contact-us-heading {
   font-size: 45px;
   line-height: 45px;
+  font-weight: 500;
   margin: 0 0 50px 0;
   color: #000000;
 }
@@ -1552,4 +1588,8 @@ input[type="radio"].visually-hidden {
 .footer-discounts,
 .inner-page .footer-discounts {
   color: #444444;
+}
+
+.price-heading {
+    letter-spacing: 0.01em;
 }
