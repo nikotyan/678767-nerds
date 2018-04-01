@@ -971,6 +971,7 @@ input[type="radio"].visually-hidden {
 
   cursor: pointer;
   user-select: none;
+  padding-left: 3px;
 }
 
 /*чекбоксы картинки и их состояния*/
@@ -1318,6 +1319,15 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 20px 40px 0 rgba(0, 0, 1, 0.75);
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 
 .modal-contact-us-form input :-ms-input-placeholder {
   color: #000000;
@@ -1603,3 +1613,4 @@ input[type="radio"].visually-hidden {
 .main-header {
   background-color: #eeeeee;
 }
+
