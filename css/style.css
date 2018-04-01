@@ -10,7 +10,6 @@ body {
   color: #000000;
 
   background-color: #ffffff;
-  width: 1440px;
 }
 
 .container {
@@ -820,10 +819,11 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   line-height: 22px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .price-controls input {
-  width: 60px;
+ width: 60px;
   padding: 8px 10px;
   margin-left: 10px;
 
@@ -836,9 +836,7 @@ input[type="radio"].visually-hidden {
   background: #eeeeee;
 }
 
-.max-price {
-  text-align: right;
-}
+
 
 
 
@@ -1316,7 +1314,7 @@ input[type="radio"].visually-hidden {
   padding: 73px 100px 85px 100px;
 
   left: 240px;
-  bottom: 178px;
+  top: 15px;
   background-color: #ffffff;
 
   box-shadow: 0 20px 40px 0 rgba(0, 0, 1, 0.75);
@@ -1656,3 +1654,10 @@ overflow-y: scroll;
     transform: translateX(10px);
   }
 }
+
+
+
+
+
+
+
