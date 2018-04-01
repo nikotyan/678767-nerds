@@ -1540,6 +1540,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-description {
   margin: 0 0 30px 0;
+  max-height: 146px;
+  overflow-y: scroll;
 }
 
 .footer-discounts,
