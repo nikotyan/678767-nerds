@@ -116,7 +116,6 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   color: #000000;
   display: flex;
-  margin: auto;
   justify-content: space-between;
 }
 
@@ -1599,4 +1598,8 @@ input[type="radio"].visually-hidden {
 
 .price-heading {
     letter-spacing: 1px;
+}
+
+.main-header {
+  background-color: #eeeeee;
 }
