@@ -874,12 +874,14 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0 0 0 267px;
-  width: 280px;
+  margin: 0 0 0 265px;
+  width: 272px;
   font-size: 0;
 }
 
-
+.order-option-item{
+  padding-top: 2px;
+}
 
 .order-option-item a:hover,
 .order-option-item a:focus {
@@ -914,7 +916,7 @@ input[type="radio"].visually-hidden {
 
 .filters {
   width: 260px;
-  margin-top: 56px;
+  margin-top: 57px;
 }
 
 .filters ul {
@@ -945,15 +947,15 @@ input[type="radio"].visually-hidden {
 }
 
 .filters fieldset:nth-child(2) legend {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .filters fieldset:nth-child(3) legend {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .filters fieldset:nth-child(2) {
-  margin-bottom: 23px;
+  margin-bottom: 27px;
 }
 
 .filter-option-radio,
