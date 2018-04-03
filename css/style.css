@@ -182,7 +182,7 @@ input[type="radio"].visually-hidden {
 .site-navigation-current a,
 .user-navigation-current a {
   border-bottom: 2px solid #fb565a;
-  padding: 0 0 5px 0;
+  padding: 0 0 3px 0;
 }
 
 .user-navigation a::before {
@@ -1627,7 +1627,7 @@ input[type="radio"].visually-hidden {
   margin: 0 0 29px 0;
   padding-bottom: 1px;
   max-height: 383px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .footer-discounts,
