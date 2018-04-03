@@ -867,7 +867,7 @@ input[type="radio"].visually-hidden {
 .order-controls {
   display: flex;
   padding: 0;
-  margin: 59px 0 92px 40px;
+  margin: 60px 0 89px 40px;
   text-transform: uppercase;
   color: #000000;
 
@@ -957,12 +957,12 @@ input[type="radio"].visually-hidden {
 .filters fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 
 .filters fieldset:first-child {
-  margin-bottom: 54px;
+  margin-bottom: 56px;
 }
 
 .filters fieldset:nth-child(2) legend {
