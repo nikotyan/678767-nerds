@@ -900,6 +900,7 @@ input[type="radio"].visually-hidden {
 .order-option-item a{
   color:#000000;
   opacity: 0.3;
+  font-size: 14px;
 }
 
 .order-option-item{
