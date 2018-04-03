@@ -62,8 +62,9 @@ img {
 }
 
 .button {
-  font: inherit;
   display: inline-block;
+  vertical-align: baseline;
+  font: inherit;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -76,6 +77,8 @@ img {
   padding-top: 17px;
   padding-bottom: 17px;
   box-sizing: border-box;
+  min-height: 50px;
+  word-wrap: break-word;
 }
 
 .button:hover,
@@ -234,6 +237,8 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-item-slogan {
+  display: inline-block;
+  vertical-align: baseline;;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -241,7 +246,6 @@ input[type="radio"].visually-hidden {
   max-width: 600px;
   margin: 0;
   margin-bottom: 27px;
-  display: inline-block;
 }
 
 .feature-item {
@@ -273,11 +277,13 @@ input[type="radio"].visually-hidden {
 
 .to-know-more-button {
   width: 240px;
-  height: 50px;
+  padding-left: 52px;
+  padding-right: 52px;
 }
 
 .slider-controls i {
   display: inline-block;
+  vertical-align: baseline;
   width: 18px;
   height: 18px;
 
@@ -340,6 +346,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin-bottom: 85px;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .product-item {
@@ -398,8 +405,13 @@ input[type="radio"].visually-hidden {
 
 .order-button {
   width: 160px;
-  height: 50px;
   margin-top: 16px;
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
+.order-button:active{
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /*о нас*/
@@ -494,6 +506,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-right: 15px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .about-us-digits-item {
@@ -546,9 +559,10 @@ input[type="radio"].visually-hidden {
 .projects-list {
   margin: auto auto 79px auto;
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
   padding: 0;
+  flex-wrap: wrap;
 
 }
 
@@ -650,8 +664,9 @@ input[type="radio"].visually-hidden {
 
 .write-us-button {
   width: 219px;
-  height: 50px;
   margin-top: 37px;
+  padding-left: 43px;
+  padding-right: 43px;
 }
 
 
@@ -822,7 +837,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
-
+  vertical-align: baseline;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -1243,11 +1258,12 @@ input[type="radio"].visually-hidden {
 
 .filter-button {
   width: 260px;
-  height: 50px;
   background-color: #eeeeee;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 
@@ -1264,7 +1280,8 @@ input[type="radio"].visually-hidden {
 
 .price-button {
   width: 200px;
-  height: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 
@@ -1293,22 +1310,23 @@ input[type="radio"].visually-hidden {
   color: #000000;
   background-color: #eeeeee;
   width: 50px;
-  height: 50px;
   text-align: center;
   line-height: 18px;
-
   display: block;
+  width: 50px;
+  min-height: 10px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 
 .pagination-item .pagination-next {
+  display: inline-block;
+  vertical-align: baseline;
   color: #000000;
 
   background-color: #eeeeee;
   width: 260px;
-
-  display: inline-block;
-
 }
 
 
@@ -1437,9 +1455,10 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-contact-us-name {
-  padding: 0;
   display: inline-block;
+  vertical-align: baseline;
   margin-right: 40px;
+  padding: 0;
 }
 
 
@@ -1452,6 +1471,7 @@ input[type="radio"].visually-hidden {
 
 .modal-contact-us-email {
   display: inline-block;
+  vertical-align: baseline;
   margin-bottom: 13px;
   box-sizing: border-box;
 }
@@ -1496,8 +1516,9 @@ input[type="radio"].visually-hidden {
 
 .send-button {
   width: 260px;
-  height: 50px;
   margin-top: 48px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 /*закрытие модального окна*/
@@ -1597,7 +1618,8 @@ input[type="radio"].visually-hidden {
 
 .pagination-item-current a {
   background-color: #ffffff;
-  border: 1px solid #dbdbdb;
+  border: 3px solid #dbdbdb;
+  padding: 14px;
 }
 
 
