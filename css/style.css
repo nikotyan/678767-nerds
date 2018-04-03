@@ -619,7 +619,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   line-height: 0;
   content: "";
-
+  background-color: #f2efe9;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   min-height: 416px;
