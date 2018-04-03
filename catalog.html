@@ -18,7 +18,7 @@
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
         <li><a href="clients.html">Клиенты</a></li>
-        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+        <li class="site-navigation-current"><a>Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       <ul class="user-navigation">
@@ -40,8 +40,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="toggle toggle-min" aria-label="уменьшить минимальную цену"></div>
+                <div class="toggle toggle-max" aria-label="увеличить максмальную цену"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price">от <input name="min-price" class="filter-input-price price-min" type="number" value="0"></label>
@@ -124,7 +124,7 @@
             <div class="catalog-item-info">
               <h3 class="catalog-item-title"><a href="#">Sedona</a></h3>
               <p class="catalog-item-description">Информационный сайт<br> для туристов</p>
-              <a class="button price-button" href="#">9900 руб.</a>
+              <a class="button price-button" href="#" aria-label="переход на страницу товара">9900 руб.</a>
             </div>
             <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona информационный сайт для туристов">
           </li>
@@ -132,7 +132,7 @@
             <div class="catalog-item-info">
               <h3 class="catalog-item-title"><a href="#">Pink App</a></h3>
               <p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button price-button" href="#">9900 руб.</a>
+              <a class="button price-button" href="#" aria-label="переход на страницу товара">9900 руб.</a>
             </div>
             <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App продуктовый лендинг приложения для iOS и Android">
           </li>
@@ -140,7 +140,7 @@
             <div class="catalog-item-info">
               <h3 class="catalog-item-title"><a href="#">Barbershop</a></h3>
               <p class="catalog-item-description">Сайт салоны красоты.<br> Для мужчин, да.</p>
-              <a class="button price-button" href="#">9900 руб.</a>
+              <a class="button price-button" href="#" aria-label="переход на страницу товара">9900 руб.</a>
             </div>
             <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop сайт салоны красоты.Для мужчин, да.">
           </li>
@@ -148,7 +148,7 @@
             <div class="catalog-item-info">
               <h3 class="catalog-item-title"><a href="#">Mishka</a></h3>
               <p class="catalog-item-description">Интернет-магазин<br> вязаных игрушек</p>
-              <a class="button price-button" href="#">9900 руб.</a>
+              <a class="button price-button" href="#" aria-label="переход на страницу товара">9900 руб.</a>
             </div>
             <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka интернет-магазин вязаных игрушек">
           </li>
@@ -172,10 +172,10 @@
         <section class="pagination">
           <h3 class="visually-hidden">Навигация по страницам каталога</h3>
           <ul class="pagination-list">
-            <li class="pagination-item pagination-item-current"><a class="button">1</a></li>
-            <li class="pagination-item"><a class="button" href="#">2</a></li>
-            <li class="pagination-item"><a class="button" href="#">3</a></li>
-            <li class="pagination-item"><a href="#" class="button pagination-next">следующая</a></li>
+            <li class="pagination-item pagination-item-current"><a class="button" aria-label="переход на первую страницу каталога">1</a></li>
+            <li class="pagination-item"><a class="button" href="#" aria-label="переход на вторую страницу каталога">2</a></li>
+            <li class="pagination-item"><a class="button" href="#" aria-label="переход на третью страницу каталога">3</a></li>
+            <li class="pagination-item"><a href="#" class="button pagination-next" aria-label="переход на следующую страницу каталога">следующая</a></li>
           </ul>
         </section>
       </section>
