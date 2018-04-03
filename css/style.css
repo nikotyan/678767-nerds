@@ -867,7 +867,7 @@ input[type="radio"].visually-hidden {
 .order-controls {
   display: flex;
   padding: 0;
-  margin: 60px 0 89px 40px;
+  margin: 60px 0 94px 40px;
   text-transform: uppercase;
   color: #000000;
 
@@ -895,7 +895,11 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0 0 0 265px;
   width: 272px;
-  font-size: 0;
+}
+
+.order-option-item a{
+  color:#000000;
+  opacity: 0.3;
 }
 
 .order-option-item{
