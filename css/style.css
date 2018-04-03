@@ -238,7 +238,7 @@ input[type="radio"].visually-hidden {
 
 .feature-item-slogan {
   display: inline-block;
-  vertical-align: baseline;;
+  vertical-align: baseline;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -616,6 +616,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts {
+   position: relative;
   line-height: 0;
   content: "";
 
@@ -623,6 +624,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100%;
+  min-height: 416px;
 }
 
 .contacts {
@@ -630,12 +632,10 @@ input[type="radio"].visually-hidden {
   width: 319px;
   height: 308px;
   padding: 50px 50px 0 50px;
-  /* margin: 0 0 0 -580px; */
-  margin: 0;
+  margin: 0 0 0 -580px;
   position: absolute;
   bottom: 54px;
-  /* left: 50%; */
-  left: 20px;
+  left: 50%;
   background-color: #ffffff;
   box-sizing: border-box;
 }
@@ -1292,13 +1292,11 @@ input[type="radio"].visually-hidden {
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
-  width: 442px;
+  width: 443px;
 
 
   padding: 0;
 
-
-  justify-content: space-between;
   margin-left: 20px;
 }
 
@@ -1313,7 +1311,18 @@ input[type="radio"].visually-hidden {
   padding-left: 17px;
   padding-right: 17px;
   min-width: 50px;
+
+
+  margin-right: 11px;
+
 }
+
+.pagination-item .pagination-next{
+  margin-right: 0;
+}
+
+
+
 
 
 .pagination-item .pagination-next {
@@ -1610,7 +1619,7 @@ input[type="radio"].visually-hidden {
 .pagination-item a:active,
 .pagination-next:active {
   background-color: #d5d5d5;
-  color: #000000;
+  color: rgba(0,0,0,0.3)
 }
 
 .pagination-item-current a {
@@ -1693,7 +1702,6 @@ input[type="radio"].visually-hidden {
 
 
 .contacts-container {
-  position: relative;
   width: 1200px;
   margin: auto;
 }
@@ -1701,3 +1709,5 @@ input[type="radio"].visually-hidden {
 .footer-social-promo {
   margin-top: 9px;
 }
+
+
