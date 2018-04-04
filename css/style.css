@@ -936,6 +936,7 @@ input[type="radio"].visually-hidden {
 
 
 
+
 /*фильтры*/
 
 .filters {
@@ -1163,6 +1164,15 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox:disabled + label {
   opacity: 0.35;
   color: #283136;
+}
+
+.filter-option-checkbox input:focus + label,
+.filter-option-checkbox input:focus + label::before,
+.filter-option-radio input:focus + label,
+.filter-option-radio input:focus + label::before {
+  outline-color: -webkit-focus-ring-color;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 
